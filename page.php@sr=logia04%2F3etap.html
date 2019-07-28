@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Mazowieckiego Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;04
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+
+
+<h4>Zadanie 1 (Kwadraty).</h4>
+<p>Zdefiniuj procedurę <span>KWADRATY&nbsp;:lista</span> rysującą na ekranie ciąg kwadratów. Dana <span>:lista</span> jest listą list. Każdy element danej <span>:lista</span> jest listą pustą lub listą jednoelementową zbudowaną analogicznie, tj. też jest listą pustą lub jednoelementową. Liczba elementów danej <span>:lista</span> określa liczbę rysowanych kwadratów. Każdy kwadrat może zawierać wewnętrzne kwadraty, zależnie od poziomu zagłębień listy opisującej kwadrat. Odstępy pomiędzy współśrodkowymi kwadratami są takie same i&nbsp;równe długości boku najmniejszego z&nbsp;nich. Długości boków wszystkich zewnętrznych kwadratów są takie same i&nbsp;możliwie duże, tak żeby wszystkie kwadraty mieściły się na ekranie. Odstępy pomiędzy sąsiednimi zewnętrznymi kwadratami są równe jednej piątej długości boku zewnętrznych kwadratów.</p>
+<p>Poniżej widać efekty wywołań, kolejno: <br />KWADRATY [[[]][]] oraz KWADRATY [[][[[]]][[]]].</p>
+<div class="art-img-center">
+<img src="logia04/3zad1a.gif" title="KWADRATY [[[]][]]" hspace="5">
+<img src="logia04/3zad1b.gif" title="KWADRATY [[][[[]]][[]]]" hspace="5">
+</div>
+
+<h4>Zadanie 2 (Kółko i krzyżyk).</h4>
+<p>Zdefiniuj funkcję <span>KK&nbsp;:gra</span>, której daną jest niepusta lista dziewięcioliterowych słów. Każde słowo opisuje układ kółek i&nbsp;krzyżyków w popularnej grze "kółko i&nbsp;krzyżyk" na planszy 3 na 3 pola - wierszami (tzn. trzy pierwsze znaki opisują pierwszy wiersz planszy, itd.). W słowach mogą występować tylko małe litery <b>x</b>, <b>o</b> oraz <b>w</b>. Oznaczają one: <b>x</b> - krzyżyk na danym polu, <b>o</b> - kółko na danym polu, zaś <b>w</b> - wolne pole. Zakładamy poprawność danych słów, tzn. każde z&nbsp;nich opisuje możliwy układ w&nbsp;czasie gry. Zakładamy także, że żadne ze słów nie opisuje sekwencji wygrywającej.<br>
+Wartością funkcji <span>KK</span> jest <b>prawda</b>, jeśli dana lista <span>:gra</span> opisuje możliwą sekwencję kolejnych układów w&nbsp;czasie gry, zaś <b>fałsz</b> - w&nbsp;przeciwnym przypadku.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td>
+<td class="granat"> KK [xwxoxooww]</td>
+<td class="male"> jest prawda.</td></tr>
+<tr><td class="male">Wynikiem </td>
+<td class="granat"> KK [xwxoxooww xwxoxooxw xwxoxooxo]</td>
+<td class="male"> jest prawda.</td></tr>
+<tr><td class="male">Wynikiem </td>
+<td class="granat">KK [wwxoxooww xwxoxooxw]</td>
+<td class="male"> jest fałsz.</td></tr>
+<tr><td class="male">Wynikiem</td>
+<td class="granat">KK [wwwwwwwww wwwwxwwww owwwxwwww oxwwxwwww]</td>
+<td class="male"> jest prawda.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (Szyfr Cezara).</h4>
+<p>Zdefiniuj funkcję <span>DESZYFR&nbsp;:zaszyfr&nbsp;:klucz1&nbsp;:klucz2</span>, której danymi są:</p>
+<ul>
+<li><span>:zaszyfr</span> - poprawnie zaszyfrowane słowo, składające się z&nbsp;małych liter alfabetu łacińskiego (bez polskich znaków diakrytycznych), nie dłuższe niż siedmioliterowe,</li>
+<li><span>:klucz1</span> - jednocyfrowa liczba określająca klucz szyfrowania samogłosek,</li>
+<li><span>:klucz2</span> - jednocyfrowa liczba określająca klucz szyfrowania spółgłosek.</li>
+</ul>
+<p>Wynikiem funkcji jest lista zawierająca wszystkie możliwe słowa, które po zaszyfrowaniu dają <span>:zaszyfr</span>. Kolejność słów w&nbsp;wyniku jest nieistotna. Przyjęty sposób szyfrowania to modyfikacja jednego z najstarszych znanych systemów kodowania, przypisywanego Juliuszowi Cezarowi. Polega on na zastąpieniu każdej kolejnej litery - literą występującą w&nbsp;alfabecie o&nbsp;określoną liczbę pozycji dalej, cyklicznie (tj. jeśli wykraczamy poza alfabet, to kolejne litery bierzemy z&nbsp;początku alfabetu). W&nbsp;naszym zadaniu tę liczbę pozycji, oddzielnie dla samogłosek i&nbsp;spółgłosek, określają klucze szyfrowania funkcji <span>DESZYFR</span>.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem</td>
+<td class="granat">DESZYFR "fycmqva 2 2</td>
+<td class="male">jest [dwakoty].</td></tr>
+<tr><td class="male">Wynikiem</td>
+<td class="granat">DESZYFR "epi 4 3</td>
+<td class="male">jest [ame amf bme bmf].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (Listowy kod słowa).</h4>
+<p>Zdefiniuj funkcję <span>LKS&nbsp;:słowo</span>, której daną jest słowo składające się z&nbsp;małych liter alfabetu łacińskiego i&nbsp;cyfr. Wynikiem funkcji jest lista, której kolejne elementy odpowiadają kolejnym znakom danej. Litery kodujemy listami: literę <b>a</b> - listą pustą, literę <b>b</b> - listą składającą się z&nbsp;listy pustej, literę <b>c</b> - listą <b>[[[]]]</b>, itd. według pozycji poszczególnych liter w&nbsp;alfabecie. Cyfry danej <span>:słowo</span> są bezpośrednio umieszczane w&nbsp;wyniku - bez kodowania.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr valign="top"><td class="male">Wynikiem</td>
+<td class="granat"> LKS "c3ba</td>
+<td class="male">jest [[[[]]] 3 [[]] []].</td></tr>
+<tr valign="top"><td class="male">Wynikiem</td>
+<td class="granat"> LKS "a37ba</td>
+<td class="male">jest [[] 3 7 [[]] []].</td></tr>
+<tr valign="top"><td class="male">Wynikiem</td>
+<td class="granat"> LKS "d</td>
+<td class="male">jest [[[[[]]]]].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

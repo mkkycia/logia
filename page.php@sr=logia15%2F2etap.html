@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;15
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (Szyfr obrazkowy).</h4>
+<p>Julka i Kuba używają szyfrów obrazkowych. Najpierw ustalają alfabet zawierający litery, które będą występować w szyfrowanym <em>słowie</em>. Następnie kodują <em>słowo</em> za pomocą prostokątów o różnych wymiarach. Wysokość prostokąta odpowiadającego kolejnej literze <em>słowa</em> zależy od jej pozycji w <em>alfabecie</em> i wynosi, odpowiednio, 10 dla pierwszej litery <em>alfabetu</em>, 20 dla drugiej, 30 dla trzeciej itd. Szerokość prostokąta zależy od pozycji litery w&nbsp;szyfrowanym <em>słowie</em> i jest równa 10 dla pierwszej litery <em>słowa</em>, 20 dla drugiej, 30 dla trzeciej, itd. Dla każdego <em>słowa</em> określona jest linia bazowa, na której leży górny bok prostokątów ilustrujących samogłoski oraz dolny bok prostokątów odpowiadających spółgłoskom.</p>
+<p>Napisz dwuparametrową procedurę/funkcję <span>szyfr</span>, po wywołaniu której na środku ekranu powstanie rysunek zaszyfrowanego słowa. Pierwszy parametr jest alfabetem i składa się z co najwyżej <strong>25</strong> liter. Drugi parametr jest szyfrowanym słowem, co najwyżej dwunastoliterowym.</p>
+
+<p>Rysunki poniżej przedstawiają efekt wywołania:</p>
+<div class="art-img-center">
+<img src="logia15/2zad1a.png" hspace="5" title="szyfr &quot;abcdefghijklmno &quot;lajkonik"><br />
+w Logo – szyfr "abcdefghijklmno "lajkonik, </ br> w Pythonie – szyfr('abcdefghijklmno','lajkonik')</div><br />
+<div class="art-img-center">
+<img src="logia15/2zad1b.png" title="szyfr &quot;abcde &quot;abba"><br />
+w Logo – szyfr "abcde "abba, w Pythonie – szyfr('abcde','abba')</div>
+<div class="art-img-center">
+<img src="logia15/2zad1c.png" title="szyfr &quot;acdeh &quot;dachdach"><br />
+w Logo – szyfr "acdeh "dach, w Pythonie – szyfr('acdeh','dach')</div>
+<div class="art-img-center">
+<img src="logia15/2zad1d.png" title="szyfr &quot;rklot &quot;otok"><br />
+w Logo – szyfr "rklot "otok, w Pythonie – szyfr('rklot','otok')</div>
+
+<h4>Zadanie 2 (Redukcja).</h4>
+<p>Janek lubi zabawy z liczbami i postanowił je przekształcać. Analizuje liczbę od cyfry jedności do najbardziej znaczącej cyfry. Jeżeli dwie sąsiednie cyfry są takie same, to zastępuje je ostatnią cyfrą ich sumy. Po zamianie przegląda kolejne (jeszcze nieprzejrzane) cyfry. Po przejrzeniu całej liczby powtarza analizę, aż nie dokona żadnej zamiany. </p>
+<p>Pomóż Jankowi i napisz jednoparametrową funkcję <span>redukcja</span>, której parametrem jest liczba całkowita dodatnia nie większa niż <strong>10<sup>100</sup></strong>. Wynikiem funkcji jest liczba po przekształceniach wykonanych przez Janka.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td colspan="2">w Logo:</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja 84211 </td>
+<td class="male"> jest 6 (w kolejnych krokach Janek otrzymuje 8422, 844, 88, 6).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja 426633</td>
+<td class="male"> jest 86 (w kolejnych krokach Janek otrzymuje 4226, 446, 86).</td></tr>
+
+<tr><td colspan="2">w Pythonie:</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja(84211)</td>
+<td class="male"> jest 6 (w kolejnych krokach Janek otrzymuje 8422, 844, 88, 6).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja(426633) </td>
+<td class="male"> jest 86 (w kolejnych krokach Janek otrzymuje 4226, 446, 86).</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (Ile liczb).</h4>
+<p>Napisz dwuparametrową funkcję <span>ile</span>, której wynikiem jest liczba dodatnich liczb całkowitych, o liczbie cyfr równej pierwszemu parametrowi funkcji i mających tę cechę, że w swoim zapisie zawierają co najmniej jedną cyfrę określoną drugim parametrem funkcji. Pierwszy parametr może przyjmować wartości od <strong>1</strong> do <strong>9</strong>, a drugi – od <strong>0</strong> do <strong>9</strong>. Postaraj się, aby na wynik nie trzeba było czekać zbyt długo.</p>
+
+<table class="zad-przyklad">
+<tr><td colspan="2">w Logo:</td></tr>
+
+<tr><td class="male">Wynikiem </td><td class="granat">ile 1 4 </td>
+<td class="male"> jest 1 (bo liczba 4 jest jedyną dodatnią liczbą jednocyfrową zawierającą cyfrę 4).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ile 2 5 </td>
+<td class="male"> jest 18 (bo jedynymi liczbami dwucyfrowymi zawierającymi piątkę są: 15, 25, 35, 45, 50-59, 65, 75, 85, 95).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ile 3 6 </td>
+<td class="male"> jest 252.</td></tr>
+<tr><td colspan="2">w Pythonie:</td></tr>
+
+<tr><td class="male">Wynikiem </td><td class="granat">ile(1,4) </td>
+<td class="male"> jest 1 (bo liczba 4 jest jedyną dodatnią liczbą jednocyfrową zawierającą cyfrę 4).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ile(2,5) </td>
+<td class="male"> jest 18 (bo jedynymi liczbami dwucyfrowymi zawierającymi piątkę są: 15, 25, 35, 45, 50-59, 65, 75, 85, 95).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ile(3,6)</td>
+<td class="male"> jest 252.</td></tr>
+</table>
+
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

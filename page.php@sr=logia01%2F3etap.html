@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Mazowieckiego Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;01, Logo i&nbsp;algorytmy
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+
+<h3>WPROWADZENIE - KRAINA WĘŻOWCÓW</h3>
+<div class="art-img-center">
+<img src="logia01/wrys1.gif" title="Rysunek 1" hspace="5">
+</div>
+<p>Wężowce to sztuczne wyspy przytwierdzone do dna morskiego u&nbsp;wybrzeży oceanu.<p>
+<p>Każdy wężowiec jest zbudowany z&nbsp;kwadratowych platform o&nbsp;wymiarach 10&nbsp;m&nbsp;x&nbsp;10&nbsp;m.</p>
+<p>Najprostszy wężowiec składa się z&nbsp;jednej platformy.<br>
+Złożony wężowiec jest ciągiem połączonych platform.<br>
+Pierwsza platforma w ciągu jest połączona (całym) jednym bokiem z&nbsp;drugą i&nbsp;tylko z&nbsp;nią, ostatnia - z&nbsp;przedostatnią i&nbsp;tylko z&nbsp;nią, a&nbsp;każda inna z&nbsp;dokładnie dwoma - poprzednią i&nbsp;następną.</p>
+<p>Układy a i&nbsp;b na rysunku 1 to poprawnie zbudowane wężowce.</p>
+<p>Układ c nie jest wężowcem, bo aż 4 platformy mają tylko jednego sąsiada, a&nbsp;2 mają trzech sąsiadów.</p>
+<p>Układ d nie jest wężowcem, bo tylko 1 platforma ma jednego sąsiada, a&nbsp;3 mają trzech sąsiadów.</p>
+<div class="art-img-center">
+<img src="logia01/wrys2.gif" title="Rysunek 2" hspace="5">
+</div>
+<p>Kolonia wężowców może zajmować siatkę 20&nbsp;x&nbsp;20 pól, jak na rysunku&nbsp;2.</p>
+<p>Wężowce mogą przylegać do boków siatki, ale żadne dwa nie mogą się ze sobą stykać nawet rogami.</p>
+<p>Pola siatki zajmowanej przez kolonię wężowców numerujemy kolejno od 0 do 399. Pola w&nbsp;wierszu najniższym na mapie mają kolejno od lewej do prawej numery od 0 do 19, pola w&nbsp;drugim od dołu wierszu mają numery od 20 do 39 itd. Pole w&nbsp;prawym górnym rogu mapy ma numer&nbsp;399.</p>
+
+<p>Opisem wężowca jest lista numerów wszystkich zajmowanych przez niego&nbsp;pól.</p>
+<p>Kodem wężowca nazywamy taki opis, w&nbsp;którym:</p>
+<ul>
+<li>każde dwie sąsiednie liczby na liście są numerami pól zajmowanych przez dwie sąsiednie platformy wężowca,</li>
+<li>pierwsza liczba na liście jest mniejsza od ostatniej.</li>
+</ul>
+<p>Każdy wężowiec, zajmujący co najmniej dwa pola ma wiele opisów różniących się porządkiem elementów, ale tylko jeden kod.  Np. wężowiec w&nbsp;prawym dolnym rogu siatki na rysunku 2, składający się z&nbsp;3 platform, ma 6 różnych opisów: [18 19 39] [19 39 18] itd., ale tylko jeden opis - [18 19 39] jest jego kodem.</p>
+<p>Kolonie wężowców można kodować na wiele różnych sposobów. My przyjmujemy następujący system kodowania. Każdy wiersz siatki pól 20&nbsp;x&nbsp;20 pól zajmowanej przez kolonię opisujemy kolejno od góry do dołu za pomocą słów utworzonych z&nbsp;20 cyfr binarnych 0&nbsp;lub&nbsp;1.</p>
+<p>Opisem pierwszych 4 wierszy kolonii na rysunku 2 są odpowiednio słowa:</p>
+<ul>
+00110000000000000000<br>
+01100000000000001110<br>
+11000000000001011010<br>
+10000000111100010010
+</ul>
+<p>Każde takie słowo interpretujemy jako dwójkowy zapis liczby całkowitej i&nbsp;tłumaczymy na system dziesiętny. Otrzymana w&nbsp;ten sposób lista dwudziestu liczb jednoznacznie opisuje kolonię i&nbsp;jest jej kodem. Kodem kolonii przedstawionej na rysunku 2 jest lista: [196608 393230 786522 528146 125266 75858 338770 338240 339712 352256 262146 458874 3914 125258 76106 10570 125272 68352 122881&nbsp;3].</p>
+
+
+<h4>Zadanie 1.</h4>
+<p>Zdefiniuj polecenie <span>MAPA&nbsp;:kk</span>, które mając dany kod kolonii wężowców <span>:kk</span>, rysuje na ekranie jej mapę, podobną do rysunku poniżej. Morze na mapie powinno być granatowe, a&nbsp;każdy wężowiec pomalowany na inny kolor. Zakładamy, że dana kolonia może się składać z&nbsp;co najwyżej 12 wężowców, więc 16 podstawowych kolorów zupełnie wystarczy. 
+Uwaga: nie rysujemy linii siatki. Dla danego kodu kolonii przedstawionej na rysunku 2 we wprowadzeniu, mapa utworzona przez Twoją procedurę może się różnić od rysunku poniżej tylko wyborem kolorów, ale każdy wężowiec na mapie musi mieć inny kolor.</p>
+<p>Poniższy rysunek przedstawia wywołanie MAPA [196608 393230 786522 528146 125266 75858 338770 338240 339712 352256 262146 458874 3914 125258 76106 10570 125272 68352 122881 3].</p>
+<div class="art-img-center">
+<img src="logia01/3zad1.gif" title="MAPA [196608 393230 786522 528146 125266 75858 338770 338240 339712 352256 262146 458874 3914 125258 76106 10570 125272 68352 122881 3]" hspace="5">
+</div>
+
+<h4>Zadanie 2.</h4>
+<p>Zdefiniuj funkcję <span>ODBICIE&nbsp;:kw</span>, która mając kod wężowca, daje w&nbsp;wyniku kod jego symetrycznego odbicia względem pionowej osi symetrii kwadratowej siatki pól.</p>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">ODBICIE [48 68 88 108 128 148 149 150 151 131 111 91 71 51 50]</td></tr>
+<tr><td class="male">powinno dać wynik [49 48 68 88 108 128 148 149 150 151 131 111 91 71 51],</td></tr>
+<tr><td class="granat">ODBICIE [18 19 39]</td></tr>
+<tr><td class="male">powinno dać wynik [1 0 20].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3.</h4>
+<p>Zdefiniuj funkcję <span>PROST&nbsp;:kw</span>, która mając dany kod wężowca, znajduje minimalny prostokąt pól na mapie, w&nbsp;którym mieści się dany wężowiec. Wynikiem funkcji ma być lista dwóch nieujemnych liczb całkowitych: pierwsza - to numer pola w&nbsp;lewym dolnym rogu wyznaczonego prostokąta, a&nbsp;druga - to numer pola w&nbsp;prawym górnym rogu.</p>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">PROST [48 68 88 108 128 148 149 150 151 131 111 91 71 51 50]</td></tr>
+<tr><td class="male">powinno dać wynik [48&nbsp;151],</td></tr>
+<tr><td class="granat">PROST [22]</td></tr>
+<tr><td class="male">powinno dać wynik [22&nbsp;22],</td></tr>
+<tr><td class="granat">PROST [3 23 22 42 41]</td></tr>
+<tr><td class="male">powinno dać wynik [1&nbsp;43].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4.</h4>
+<p>Zdefiniuj funkcję <span>KODW&nbsp;:opis</span>, która mając dany jakikolwiek opis wężowca, daje w&nbsp;wyniku jego kod.</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">KODW [48 50 51 68 71 88 91 108 111 128 131 148 149 150 151]</td></tr>
+<tr><td class="male">powinno dać wynik [48 68 88 108 128 148 149 150 151 131 111 91 71 51 50],</td></tr>
+<tr><td class="granat">KODW [22]</td></tr>
+<tr><td class="male">powinno dać wynik [22],</td></tr>
+<tr><td class="granat">KODW [22 3 42 41 23]</td></tr>
+<tr><td class="male">powinno dać wynik [3 23 22 42 41].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

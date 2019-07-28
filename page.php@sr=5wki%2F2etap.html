@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu V Warszawskiego Konkursu Informatycznego<br /> 
+rok szkolny 1998/99
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1.</h4>
+<p>Zdefiniuj funkcję z parametrem <span>SUMAJEDNOCYFROWA&nbsp;:liczba</span>, której wartością będzie cyfra.  Funkcja powinna liczyć sumę cyfr parametru <span>:liczba</span>, następnie sumę cyfr policzonej sumy, itd. aż suma będzie cyfrą. Zakładamy, że parametr <span>:liczba</span> jest liczbą całkowitą. Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">SUMAJEDNOCYFROWA 12356</td>
+<td class="male">ma wartość&nbsp;8</td></tr>
+<tr><td class="granat">SUMAJEDNOCYFROWA 0</td>
+<td class="male">ma wartość&nbsp;0</td></tr>
+<tr><td class="granat">SUMAJEDNOCYFROWA 123</td>
+<td class="male">ma wartość&nbsp;6</td></tr>
+<tr><td class="granat">SUMAJEDNOCYFROWA 987656789</td>
+<td class="male">ma wartość&nbsp;2</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 2.</h4>
+<p>Napisz procedurę z parametrem <span>KARTKI&nbsp;:wyraz</span>, która utworzy możliwie duży rysunek pliku kartek. Parametr <span>:wyraz</span> to słowo pisane wyłącznie małymi literami i&nbsp;nie dłuższe niż 32 znaki. Stosik ma mieć tyle kartek ile liter ma słowo. Pierwszej literze odpowiada kartka na wierzchu. Spółgłoski są reprezentowane przez białe kartki a&nbsp;samogłoski przez czarne. Odległość między skrajnymi kartkami jest stała i&nbsp;równa długości boku kartki. Druga krawędź kartki jest rysowana kreską tej samej długości co krawędź przednia oraz jest nachylona do linii poziomej pod kątem 45<sup>o</sup>. Oto przykładowe wyniki wywołania procedury: KARTKI &quot;i, KARTKI &quot;nic oraz KARTKI&nbsp;&quot;abrakadabrahokuspokus.</p>
+<div class="art-img-center">
+<img src="5wki/2zad2a.gif" title="KARTKI &quot;i" vspace="5" hspace="5">
+<img src="5wki/2zad2b.gif" title="KARTKI &quot;nic" vspace="5" hspace="5">
+<img src="5wki/2zad2c.gif" title="KARTKI &quot;abrakadabrahokuspokus" vspace="5" hspace="5">
+</div>
+
+<h4>Zadanie 3.</h4>
+<p>Dane jest co najmniej dwuliterowe słowo, w&nbsp;którym występują tylko litery a&nbsp;i&nbsp;b. Jeśli założymy, że długość słowa wynosi <b>n</b>, to w&nbsp;każdym takim słowie można wyodrębnić <b>n-1</b> par sąsiednich liter, np. w&nbsp;słowie aabbab takimi parami są aa, ab, bb, ba. Napisz procedurę <span>NAJCZPAR&nbsp;:wyraz</span>, wypisującą tę parę liter (dwuznakowe słowo), która wśród par sąsiednich liter w&nbsp;parametrze <span>:wyraz</span> występuje najczęściej. Jeśli w&nbsp;słowie jest kilka par liter spełniających ten warunek, to wypisane mają być wszystkie z&nbsp;nich w&nbsp;dowolnej kolejności, w&nbsp;kolejnych wierszach. Oto przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">NAJCZPAR&nbsp;"aabbab</td>
+<td class="male">powinno wypisać na ekranie słowo ab</td></tr>
+<tr><td class="granat">NAJCZPAR&nbsp;"aaabbbaaabbb</td>
+<td class="male">powinno wypisać na ekranie słowo aa bb</td></tr>
+<tr><td class="granat">NAJCZPAR&nbsp;"aa</td>
+<td class="male">powinno wypisać na ekranie słowo aa</td></tr>
+<tr><td class="granat">NAJCZPAR&nbsp;"baba</td>
+<td class="male">powinno wypisać na ekranie słowo ba</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

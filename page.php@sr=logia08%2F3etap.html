@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;08
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (domino).</h4>
+<p>W tradycyjnej grze w domino występuje 28 kamieni. Każdy kamień składa się z 2 pól zawierających od zera do sześciu oczek. Każdy układ oczek na polach kamieni występuje tylko raz. Poniższe rysunki przedstawiają przykładowe kamienie.</p>
+<div class="art-img-center">
+<img src="logia08/3zad1a.gif" hspace="5" vspace="5" title="Kamienie w domino">
+</div> 
+<p>Najczęściej spotykana wersja gry polega na wykładaniu przez graczy kolejnych kamieni w taki sposób, aby stykające się pola na kamieniach miały taką samą liczbę oczek. Alek, przygotowując się do turnieju, postanowił zanotować przebieg rozegranej partii, a następnie go przeanalizować. Dla ułatwienia liczbę oczek na stykających się kamieniach notował raz, pomijając powtórzenia, np. układ <b>[1 0][0 3][3 2]</b> zapisał jako <b>1032</b>. Napisz procedurę <span>DOMINO :gra</span>, która narysuje przebieg gry według notatek Alka lub wypisze komunikat - <b>Błąd</b>. Parametr <span>:gra</span> jest słowem złożonym z cyfr od 0 do 6. Rysunek musi mieścić się na ekranie, jego szerokość nie może być mniejsza niż 400, kamienie układane są poziomo.</p>
+<p>Przykłady: efekt wywołania <span>DOMINO "0123456</span></p>
+<div class="art-img-center">
+<img src="logia08/3zad1b.gif" hspace="2" vspace="5" title="DOMINO &quot;0123456">
+</div> 
+<p>wywołanie <span>DOMINO "232</span> powinno wypisać komunikat <b>Błąd</b>.</p>
+
+
+<h4>Zadanie 2 (wyspy).</h4>
+<p>Jasio postanowił zwiedzić archipelag zachodnich Wysp Kanaryjskich. Składa się on z czterech wysp: Tenerife, La Gomera, La Palma oraz El Hierro. Pomiędzy wyspami kursują promy. Odległości pomiędzy poszczególnymi wyspami przedstawia tabelka poniżej.</p>
+<table cellspacing="0" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>Tenerife</td>
+    <td>La Gomera</td>
+    <td>La Palma</td>
+    <td>El Hierro</td>
+  </tr>
+  <tr>
+    <td>Tenerife</td>
+    <td>x</td>
+    <td>28 km</td>
+    <td>85 km</td>
+    <td>88 km</td>
+  </tr>
+  <tr>
+    <td>La Gomera</td>
+    <td>28 km</td>
+    <td>x</td>
+    <td>58 km</td>
+    <td>61 km</td>
+  </tr>
+  <tr>
+    <td>La Palma</td>
+    <td>85 km</td>
+    <td>58 km</td>
+    <td>x</td>
+    <td>68 km</td>
+  </tr>
+  <tr>
+    <td>El Hierro</td>
+    <td>88 km</td>
+    <td>61 km</td>
+    <td>68 km</td>
+    <td>x</td>
+  </tr>
+</table>
+<p>Jasio zapisał na liście trasę, którą zamierza pokonać. Oblicz długość trasy. Napisz funkcję <span>DT :trasa</span>, której wynikiem jest liczba kilometrów, jaką przepłynie prom, który zawinie po kolei do wysp, których nazwy są na liście <span>:trasa</span>.</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">DT []</td>
+<td class="male"> jest 0.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">DT [Tenerife La Gomera El Hierro La Palma Tenerife]</td>
+<td class="male"> jest 242.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (szyfr).</h4>
+<p>Ela wymyśliła metodę szyfrowania tekstu przy pomocy klucza złożonego z małych liter alfabetu łacińskiego. Zaczęła od zapisania liter alfabetu według następujących zasad:</p>
+<ul>
+  <li>najpierw słowo kluczowe (bez powtarzających się liter),</li>
+  <li>potem pozostałe litery alfabetu.</li>
+</ul>
+<p>Na przykład dla klucza <b>"choinka</b> kolejność liter będzie następująca: <b>choinkabdefgjlmpqrstuvwxyz</b>, a dla klucza <b>"abrakadabrahokuspokus</b>: <b>abrkdhouspcefgijlmnqtvwxyz</b>.</p>
+<p>Ela szyfrowała każdą literę tekstu w następujący sposób - znajdowała pozycję litery w alfabecie łacińskim i odpowiadającą literę tej pozycji w swoim alfabecie. Na przykład zaszyfrowana litera <b>"c</b> (trzecia pozycja w alfabecie) według klucza <b>"abrakadabrahokuspokus</b>, to litera <b>"r</b> (trzecia litera w alfabecie Eli), a&nbsp;zaszyfrowane <b>"d</b> to litera <b>"k</b> według tego klucza.</p> 
+<p>Grzesio pisze zaszyfrowany list do kolegi używając szyfru Eli. Napisz funkcję <span>SZYFR :klucz :list</span>, która pomoże Grzesiowi zaszyfrować list. Parametr <span>:klucz</span> jest słowem (kluczem szyfrowania) a parametr <span>:list</span> listą słów (listem do zaszyfrowania). Obydwa parametry składają się tylko z małych liter alfabetu łacińskiego. Wynikiem jest słowo będące zaszyfrowanym listem (spacje pomijamy).</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR "choinka [ala ma kotka i lwa]</td>
+<td class="male"> jest "cgcjcfmtfcdgwc.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR "abrakadabrahokuspokus [dookola wojtek biega wolno]</td>
+<td class="male"> jest "kiicieawipqdcbsdoawiegi.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (anagramy).</h4>
+<p>Ola lubi łamigłówki słowne. Interesują ją szczególnie słowa-anagramy, czyli wyrazy powstałe przez przestawienie liter innego wyrazu. Pomóż Oli pogrupować słowa-anagramy i napisz funkcję <span>ANAGRAMY :wyrazy</span>, której parametrem jest niepusta lista słów zbudowanych z małych liter alfabetu łacińskiego. Wynikiem funkcji jest lista list. Lista podrzędna składa się ze słów-anagramów zbudowanych z tych samych liter. Kolejność list oraz słów na liście jest dowolna.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ANAGRAMY [kto tyran kra kot pies tok narty rak]</td>
+<td class="male"> jest [[kto kot tok][tyran narty][kra rak][pies]].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Mazowieckiego Konkursu Informatycznego 2000
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4 >Zadanie 1. Kod MKI</h4>
+<div>
+<table class="zad-przyklad">
+<tr><td>
+<table width="150" border=1>
+<td colspan="2">Tabela kodów MKI</td></tr>
+<tr><td>znak</td><td>kod znaku</td></tr>
+<tr><td>a</td><td>0000</td></tr>
+<tr><td>b</td><td>0001</td></tr>
+<tr><td>c</td><td>0010</td></tr>
+<tr><td>d</td><td>0011</td></tr>
+<tr><td>e</td><td>0100</td></tr>
+<tr><td>f</td><td>0101</td></tr>
+<tr><td>g</td><td>0110</td></tr>
+<tr><td>h</td><td>0111</td></tr>
+<tr><td>i</td><td>1000</td></tr>
+<tr><td>j</td><td>1001</td></tr>
+<tr><td>k</td><td>1010</td></tr>
+<tr><td>l</td><td>1011</td></tr>
+<tr><td>m</td><td>1100</td></tr>
+<tr><td>n</td><td>1101</td></tr>
+<tr><td>o</td><td>1110</td></tr>
+<tr><td>p</td><td>1111</td></tr>
+</table></td>
+<td><p>MAZOWIECKI URZĄD SZYFRÓW posługuje się (do zapisywania tajnych informacji) alfabetem składającym się tylko z&nbsp;16 znaków - małych liter od a do p. W celu usprawnienia przetwarzania dokumentów utworzył własny system cyfrowego kodowania znaków, tzw. kod MKI, w&nbsp;którym każdej literze odpowiada czterobitowe słowo (patrz tabela).<br>
+Ustalano następujący system szyfrowania znaków, słów oraz zdań:</p>
+<ol>
+<li>Szyfrem znaku <b>x</b> (gdzie <b>x</b> oznacza dowolny znak od a do p) jest taki znak, którego kod MKI jest symetrycznym odbiciem (przestawieniem wspak) kodu znaku&nbsp;<b>x</b>.</li>
+<li>Szyfrem słowa <b>s</b> jest takie słowo, którego każdy znak jest szyfrem odpowiedniego znaku słowa&nbsp;<b>s</b>.</li>
+<li>Szyfrem zdania <b>z</b> (listy słów) jest takie zdanie, którego każde słowo jest szyfrem odpowiedniego słowa zdania&nbsp;<b>z</b>.</li>
+</ol>
+<p>Zdefiniuj funkcję <span>SZYFR&nbsp;:zd</span>, której wynikiem dla dowolnego zdanie utworzonego ze słów w&nbsp;alfabecie od a do p jest szyfr tego zdania utworzony zgodnie z&nbsp;ustalonymi wyżej zasadami.</p>
+<p>Przykładowe wyniki:</p>
+<table class="zad-przyklad">
+<tr><td class="granat">SZYFR&nbsp;[ala&nbsp;nie&nbsp;ela]</td>
+<td class="male">powinno dać wynik [ana&nbsp;lbc&nbsp;cna]</td></tr>
+<tr><td class="granat">SZYFR&nbsp;[moja&nbsp;lalka]</td>
+<td class="male">powinno dać wynik [dhja&nbsp;nanfa]</td></tr>
+</table>
+</td></tr>
+</table>
+
+</div>
+
+<h4 >Zadanie 2. Kody flagowe</h4>
+<p>Dwie przekątne kwadratu dzielą go na cztery ćwiartki. Zamalowując różne kombinacje tych ćwiartek możemy otrzymać 16 różnych wzorów, których możemy używać jako wizualnych kodów flagowych 16 elementowego alfabetu od a do p. Ustalamy następujący system wizualnego kodowania liter alfabetu od a do p w&nbsp;postaci flag.</p>
+<div class="art-img-center">
+<img src="mki/3zad2a.gif" title="Kody flagowe" hspace="5">
+</div>
+<p>Kodem flagowym słowa będzie odpowiednia sekwencja kodów flagowych kolejnych znaków.<br>
+Kodem flagowym zdania będzie sekwencja, umieszczonych kolejno jeden pod drugim i&nbsp;wyrównanych do lewego brzegu kodów słów tworzących zdanie.</p>
+<p>Zdefiniuj procedurę <span>FLAGI&nbsp;:zd</span>, która dla dowolnego danego zdania <span>:zd</span> wyświetla na środku ekranu jego kod na tle szarego prostokąta. Zakładamy, że dane zdanie będzie się składać z&nbsp;co najmniej jednego i&nbsp;co najwyżej ośmiu słów, a&nbsp;każde słowo z co najmniej jednej i&nbsp;co najwyżej 12 liter z&nbsp;alfabetu od a&nbsp;do&nbsp;p.</p>
+<p>Poniższy rysunek przedstawia wynik wywołania FLAGI [ola ma domek].</p>
+<div class="art-img-center">
+<img src="mki/3zad2b.gif" title="FLAGI [ola ma domek]" hspace="5">
+</div>
+
+<h4 >Zadanie 3. Waga szalkowa</h4>
+<p>Jeśli mamy po jednym odważniku o&nbsp;masie 1&nbsp;kg, 3&nbsp;kg, 9&nbsp;kg itd. aż do 3<sup>n</sup>&nbsp;kg, to możemy na wadze szalkowej odważyć każdy ciężar, którego masa w&nbsp;kg jest liczbą całkowitą z&nbsp;zakresu od 0 do  1+3+...+3<sup>n</sup> i&nbsp;to w&nbsp;dodatku tylko w&nbsp;jeden sposób.<br>
+Na przykład, żeby zrównoważyć ciężar 11 kg, trzeba na jednej szali położyć dany ciężar i&nbsp;odważnik 1&nbsp;kg., a&nbsp;na drugiej szali - odważniki 9&nbsp;kg i&nbsp;3&nbsp;kg.</p> 
+<p>Zdefiniuj funkcję <span>ZRW&nbsp;:mc</span>, która dla danej masy ciężaru, będącej liczbą całkowitą dodatnią, wyznacza odważniki, które trzeba położyć na szalach wagi, żeby zrównoważyć dany ciężar.<br> 
+Wynikiem funkcji ma być dwuelementowa lista. Pierwszym jej elementem powinna być lista mas odważników, które należy położyć na jednej szali z&nbsp;odmierzanym ciężarem, a&nbsp;drugim elementem - lista mas odważników, które należy położyć na przeciwnej szali. Obie te listy powinny być uporządkowane malejąco.</p>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">ZRW&nbsp;101</td>
+<td class="male">powinno dać wynik [[9&nbsp;1][81&nbsp;27&nbsp;3]],</td></tr>
+<tr><td class="granat">ZRW&nbsp;282</td>
+<td class="male">powinno dać wynik [[][243&nbsp;27&nbsp;9&nbsp;3]],</td></tr>
+<tr><td class="granat">ZRW&nbsp;3295</td>
+<td class="male">powinno dać wynik [[2187&nbsp;729&nbsp;243&nbsp;81&nbsp;27][6561&nbsp;1]],</td></tr>
+<tr><td class="granat">ZRW&nbsp;243</td>
+<td class="male">powinno dać wynik [[][243]].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

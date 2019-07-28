@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;14
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (pokolenia).</h4>
+
+<p>Alicja postanowiła przygotować drzewo genealogiczne rodu Logianów. Na kartkach zapisała informacje o&nbsp;pokrewieństwie członków rodu – w postaci par <strong>[rodzic dziecko]</strong>. Olek, brat Alicji, niechcący rozsypał wszystkie jej notatki. Pomóż uporządkować dane i napisz jednoparametrową funkcję <span>pokolenia</span>, której wynikiem jest lista złożona z głowy rodu oraz list pozostałych członków rodziny podzielonych na kolejne pokolenia: dzieci, wnuki, prawnuki, praprawnuki itd. Lista osób należących do danego pokolenia powinna być uporządkowana alfabetycznie. Parametrem funkcji <span>pokolenia</span> jest niepusta lista złożona z dwuelementowych list imion, których pierwszy element jest imieniem rodzica, a drugi – imieniem jego dziecka. Zakładamy, że każdy członek rodu ma tylko jednego rodzica (za wyjątkiem głowy rodu, która nie ma rodzica).</p> 
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">pokolenia [[a b] [b x] [a d] [a z]] </td>
+<td class="male">jest [a [b d z] [x]].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">pokolenia [[Ula Ala] [Ola Ula] [Ela Ola] [Ela Jan]]</td>
+<td class="male"> jest [Ela [Jan Ola] [Ula] [Ala]].</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">pokolenia([["a", "b"], ["b", "x"], ["a", "d"], ["a", "z"]])</td>
+<td class="male"> jest ["a", ["b", "d", "z"], ["x"]].
+<tr><td class="male">Wynikiem </td><td class="granat">pokolenia([["Ula", "Ala"], ["Ola", "Ula"], ["Ela", "Ola"], <br />["Ela", "Jan"]])</td>
+<td class="male"> jest ["Ela", ["Jan", "Ola"], ["Ula"], ["Ala"]].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 2 (sześcian).</h4>
+<table class="tab-lista">
+<tr>
+<td><p>Sześcian pokrojono otrzymując n x n x n kostek – małych identycznych sześcianów. 
+Kostki ponumerowano liczbami od 1 do n<sup>3</sup>, kolejno warstwami od góry do dołu, w obrębie warstwy kolejno rzędami od przodu do tyłu, w rzędzie od lewej do prawej.<br />
+Napisz dwuparametrową funkcję <span>obok</span>, której pierwszy parametr <span>n</span> określa podział sześcianu (2 ≤ n ≤ 20), a drugi – numer kostki <span>k</span> (1 ≤ k ≤ n3). Wynikiem funkcji jest uporządkowana rosnąco lista numerów kostek stykających się ścianą z kostką o numerze <span>k</span>.</p>
+<td class="male"><img src="logia14/3zad2.png" hspace="5" title="Rysunek pomocniczy">Numerowanie małych sześcianów, przykład dla n=3</td>
+</tr></table>
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">obok 3 11 </td>
+<td class="male">jest [2 10 12 14 20].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">obok 7 1</td>
+<td class="male"> jest [2 8 50].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">obok 10 1000</td>
+<td class="male"> jest [900 990 999].</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">obok(3, 11)</td>
+<td class="male"> jest [2, 10, 12, 14, 20].
+<tr><td class="male">Wynikiem </td><td class="granat">obok(7, 1)</td>
+<td class="male"> jest [2, 8, 50].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">obok(10, 1000)</td>
+<td class="male"> jest [900, 990, 999].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (roboty).</h4>
+<p>Dwa roboty chodzą po płaszczyźnie, w każdym kroku przebywają identyczną jednostkową odległość w jednym z&nbsp;czterech podstawowych kierunków: <em>góra</em>, <em>dół</em>, <em>prawo</em>, bądź <em>lewo</em>, które oznaczone są, odpowiednio, literami <strong>g</strong>, <strong>d</strong>, <strong>p</strong> oraz <strong>l</strong>. Opis trasy każdego robota składa się z ciągu tych liter. <br />
+Oba roboty rozpoczynają wędrówkę z tego samego miejsca i chodzą bez końca. Rozważ pierwsze 100 kroków robotów i napisz dwuparametrową funkcję <span>spotkanie</span>, której parametrami są niepuste słowa z opisami tras robotów. Wynikiem funkcji jest liczba określająca, po którym kroku roboty ponownie spotkają się, bądź zero, jeśli takie spotkanie nie nastąpi. Jeśli opis trasy skończy się, to robot wykonuje polecenia ponownie od początku opisu.</p>
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie "pd "g </td>
+<td class="male">jest 0.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie "gp "pg</td>
+<td class="male"> jest 2.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie "dg "ggppddll</td>
+<td class="male"> jest 8.</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie("pd", "g")</td>
+<td class="male"> jest 0.
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie("gp", "pg")</td>
+<td class="male"> jest 2.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">spotkanie("dg", "ggppddll")</td>
+<td class="male"> jest 8.</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 4 (załadunek).</h4>
+<p>Fabryka produkuje wyroby w kolejnych seriach (wszystkie wyroby danej serii są identyczne), a następnie ładuje do samochodów w celu przewiezienia do sklepu. </p>
+<p>Napisz dwuparametrową funkcję <span>ilesam</span>, której wynikiem jest minimalna liczba samochodów potrzebnych do przewiezienia wszystkich wyprodukowanych wyrobów. Pierwszy parametr funkcji jest niepustą listą dwuelementowych list, z których każda zawiera informacje o kolejnej serii wyrobów: liczbę wyrobów i masę pojedynczego wyrobu. Drugi parametr jest listą dopuszczalnych ładowności kolejnych przyjeżdżających samochodów.</p>
+<p>Zakładamy, że kolejne serie wyrobów ładowane są do samochodów w kolejności wyprodukowania, a samochody ładowane są w takiej kolejności, w jakiej przyjadą. Każdy samochód jest w stanie przewieźć co najmniej jeden wyrób z oczekujących na początku kolejki. Do dyspozycji jest wystarczająco wiele samochodów.</p>
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ilesam&nbsp;[[4&nbsp;5][2&nbsp;2][1&nbsp;20]] <br />[17 25 25 17 25] </td>
+<td class="male">jest 3 (pierwszy samochód przewiózł 3 wyroby, każdy o masie 5, drugi – 1 wyrób o masie 5 i 2 wyroby o masie 2, trzeci – 1 wyrób o&nbsp;masie 20).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ilesam [[20 1][2 5][1 3][2 7]] [25 10 10 10 10 10]</td>
+<td class="male"> jest 4 (pierwszy samochód przewiózł wszystkie 20 wyrobów o&nbsp;masie 1 i 1 wyrób o masie 5, drugi – 1 wyrób o masie 5 i 1 wyrób o masie 3, a trzeci i&nbsp;czwarty – po 1 wyrobie o masie 7).</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ilesam([[4,&nbsp;5],&nbsp;[2,&nbsp;2],&nbsp;[1,&nbsp;20]], <br />[17, 25, 25, 17, 25])</td>
+<td class="male"> jest 3 (pierwszy samochód przewiózł 3 wyroby, każdy o masie 5, drugi – 1 wyrób o masie 5 i 2 wyroby o masie 2, trzeci – 1 wyrób o&nbsp;masie 20).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ilesam([[4, 5], [2, 2]</td>
+<td class="male"> jest 4 (pierwszy samochód przewiózł wszystkie 20 wyrobów o&nbsp;masie 1 i 1 wyrób o masie 5, drugi – 1 wyrób o masie 5 i 1 wyrób o masie 3, a trzeci i&nbsp;czwarty – po 1 wyrobie o masie 7).</td></tr>
+</table>
+</div>
+
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Mazowieckiego Konkursu Informatycznego 2000
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<p><b>UWAGA: We wszystkich zadaniach Twoje rozwiązanie tzn. zdefiniowana przez Ciebie funkcja/polecenie musi dawać poprawny wynik/skutek tylko wtedy, gdy dane są poprawne, tzn. zgodne z&nbsp;podanym w&nbsp;treści zadania opisem. Możesz zakładać, ze Twoja procedura będzie wywoływana tylko z&nbsp;poprawnymi danymi.</b></p>
+<h4 >Zadanie 1.</h4>
+<p>Ustalamy następujący sposób szyfrowania wyrazów utworzonych z&nbsp;małych liter alfabetu łacińskiego a,&nbsp;b,&nbsp;c, ....,&nbsp;x,&nbsp;y,&nbsp;z, składającego się z&nbsp;26 liter (bez polskich znaków ą,&nbsp;ę,&nbsp;itd.):</p>
+<ul>
+<li>każde wystąpienie litery a w&nbsp;danym wyrazie zastępujemy literą z,</li>
+<li>każde wystąpienie litery b w&nbsp;danym wyrazie zastępujemy literą y,</li>
+<li>każde wystąpienie litery c w&nbsp;danym wyrazie zastępujemy literą x,<br>
+...</li>
+<li>każde wystąpienie litery z w&nbsp;danym wyrazie zastępujemy literą a.</li>
+</ul>
+<p>Ogólnie - każde wystąpienie litery i-tej od początku alfabetu zastępujemy literą i-tą od końca.</p>
+<p>Zdefiniuj funkcję szyfrującą <span>SZYFR&nbsp;:wyraz</span>, której wynikiem jest dany <span>:wyraz</span> zaszyfrowany zgodnie z&nbsp;opisaną wyżej zasadą. Oto przykładowe wyniki:</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">poprawnym wynikiem</td><td class="granat">SZYFR&nbsp;"abba</td><td class="male"> jest słowo&nbsp;zyyz,</td></tr>
+<tr><td class="male">poprawnym wynikiem </td><td class="granat">SZYFR&nbsp;"abc</td><td class="male"> jest słowo&nbsp;zyx.</td></tr>
+</table>
+</div>
+
+<h4 >Zadanie 2.</h4>
+<p>Napisz procedurę <span>KWADRACIKI&nbsp;:n</span>, która, dla dowolnej danej liczby całkowitej <span>n</span>, z&nbsp;zakresu od 1 do 20 włącznie:</p>
+<ol> 
+<li>rysuje na środku ekranu możliwie duży kwadrat podzielony na <b>n</b>x<b>n</b> małych kwadracików i&nbsp;losowo zamalowuje wnętrza pewnych kwadracików, a&nbsp;pewnych nie,</li>
+<li>wypisuje pod kwadratem liczbę zamalowanych kwadracików.</li>
+</ol>
+<p>Musisz zdefiniować procedurę <span>KWADRACIKI</span> w&nbsp;taki sposób, aby każda kombinacja zamalowanych kwadracików była możliwa - tzn. mogła powstać na skutek wywołania polecenia. Oto przykładowe wyniki wywołania KWADRACIKI 4 i&nbsp;KWADRACIKI 6.</p>
+<div class="art-img-center">
+<img src="mki/2zad2a.gif" title="KWADRACIKI 4" hspace="5">
+<img src="mki/2zad2b.gif" title="KWADRACIKI 6" hspace="5">
+</div>
+
+<h4 >Zadanie 3.</h4>
+<p>Napisz procedurę z&nbsp;dwoma parametrami <span>KWADRATY&nbsp;:k&nbsp;:n</span>, która dla dowolnych dwóch liczb całkowitych <span>k</span> oraz <span>n</span>, takich że 0&lt;=k&lt;=n<sup>2</sup> oraz 1&lt;=n&lt;=20, rysuje na środku ekranu możliwie duży kwadrat podzielony na <b>n</b>x<b>n</b> małych kwadracików, z&nbsp;których dokładnie <span>k</span> losowo wybranych kwadracików ma zamalowane wnętrza.</p>
+<p>Musisz zdefiniować procedurę <span>KWADRATY</span> w&nbsp;taki sposób, aby każda kombinacja <span>k</span> zamalowanych kwadracików była możliwa - tzn. mogła powstać na skutek wywołania polecenia. Oto przykładowe wyniki wywołania KWADRATY&nbsp;17&nbsp;6:</p>
+<div class="art-img-center">
+<img src="mki/2zad3a.gif" title="KWADRATY 17 6" hspace="5">
+<img src="mki/2zad3b.gif" title="KWADRATY 17 6" hspace="5">
+<img src="mki/2zad3c.gif" title="KWADRATY 17 6" hspace="5">
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

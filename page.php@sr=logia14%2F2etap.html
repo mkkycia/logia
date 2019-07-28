@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;14
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (Szyfr schodkowy).</h4>
+<p>Kolejnym literom alfabetu łacińskiego odpowiadają obrazki przedstawione na rysunkach poniżej:</p>
+
+<div class="art-img-center">
+<img src="logia14/2zad1pom.gif" hspace="5" title="Zaszyfrowane litery alfabetu">
+</div>
+
+Napisz dwuparametrową procedurę/funkcję <span>szyfruj</span>, której efektem wywołania jest rysunek odpowiadający słowu (pierwszemu parametrowi funkcji). Słowo składa się z małych liter alfabetu łacińskiego (od <strong>2</strong> do <strong>20</strong> znaków). Drugi parametr to liczba naturalna (od <strong>2</strong> do <strong>20</strong>), oznaczająca wysokość tworzonych schodków. Rysunek powinien być na środku ekranu i mieć kształt schodków, jak w przykładach. Szerokość rysunku wynosi <strong>760</strong> lub wysokość wynosi <strong>480</strong>.
+
+<p>Rysunki poniżej przedstawiają efekt wywołania:</p>
+<div class="art-img-center">
+<img src="logia14/2zad1b.gif" hspace="5" title="szyfruj programowanie 3"><br />
+w Logo – szyfruj "programowanie 3, </ br> w Pythonie – szyfruj("programowanie",3)</div><br />
+><div class="art-img-center">
+<img src="logia14/2zad1a.gif" title="szyfruj dokumentygoogle 5"><br />
+w Logo – szyfruj "dokumentygoogle 5, w Pythonie – szyfruj("dokumentygoogle",5)</div>
+
+<h4>Zadanie 2 (Pole robota).</h4>
+<p>Robot chodzi po płaszczyźnie, w każdym kroku przebywa jednostkową odległość w jednym z czterech podstawowych kierunków: <em>góra</em>, <em>dół</em>, <em>prawo</em>, bądź <em>lewo</em>, które oznaczone są, odpowiednio, literami <strong>g</strong>, <strong>d</strong>, <strong>p</strong> oraz <strong>l</strong>. </p>
+<p>Napisz funkcję <span>poler</span>, której parametrem jest słowo określające trasę robota, a wynikiem – pole najmniejszego prostokąta, o pionowych i poziomych bokach, zawierającego całą trasę.</p>
+
+
+<div>
+<table class="zad-przyklad">
+<tr><td colspan="2">w Logo:</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">poler "ggdp</td>
+<td class="male"> jest 2,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">poler "lllgpdddd </td>
+<td class="male"> jest 12,</td></tr>
+
+<tr><td colspan="2">w Pythonie:</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">poler("ggdp")</td>
+<td class="male"> jest 2,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">poler("lllgpdddd") </td>
+<td class="male"> jest 12,</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (Gwiazda).</h4>
+<p>Gwiazdowo ma promienistą strukturę ulic, co powoduje, że z każdej dzielnicy istnieje tylko jedna droga do Centrum. Każdy mieszkaniec zna drogę i koszt dojazdu ze swojej dzielnicy do Centrum. Są one zakodowane słowem składającym się z par złożonych z litery oznaczającej dzielnicę i cyfry określającej koszt przejazdu kolejnego odcinka. Na przykład, jeśli takim kodem jest <strong>D3E5J8</strong>, to odczytujemy, że łączny koszt dojazdu z <strong>D</strong> do Centrum to 3+5+8=16.</p> 
+<p>Napisz dwuparametrową funkcję <span>kosp</span>, której wynikiem jest minimalny koszt zorganizowania spotkania dwóch mieszkańców miasta (czyli łączny koszt ich dojazdu do określonej dzielnicy). Oba parametry są słowami, oznaczającymi drogę i koszt dojazdu do Centrum, odpowiednio, każdego z dwóch mieszkańców.</p>
+
+
+<table class="zad-przyklad">
+<tr><td><div class="art-img-center">
+<img src="logia14/2zad3a.gif" hspace="5" title="Przykładowa struktura" width="50%">
+</div></td>
+<td><table class="zad-przyklad">
+<tr><td class="male">w Logo – wynikiem </td><td class="granat">kosp "D3E5J8 "H3I2E4J6</td>
+<td class="male"> jest 8,</td></tr>
+<tr><td class="male">w Pythonie - wynikiem </td><td class="granat">kosp("D3E5J8","H3I2E4J6")</td>
+<td class="male"> jest 8.</td></tr>
+<tr><td colspan="2">(spotkanie poza Centrum),</td></tr>
+</table></td></tr>
+<tr><td><div class="art-img-center">
+<img src="logia14/2zad3b.gif" hspace="5" title="Przykładowa struktura" width="50%">
+</div></td>
+<td><table class="zad-przyklad">
+<tr><td class="male">w Logo – wynikiem </td><td class="granat">kosp "A3T5U6 "B4G1Y4</td>
+<td class="male"> jest 23,</td></tr>
+<tr><td class="male">w Pythonie - wynikiem </td><td class="granat">kosp("A3T5U6","B4G1Y4") </td>
+<td class="male"> jest 23.</td></tr>
+<tr><td colspan="2">(spotkanie w Centrum).</td></tr>
+</table></td></tr>
+</table>
+
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

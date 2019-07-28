@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;07
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1.</h4>
+<p>Każdą liczbę naturalną można przedstawić jako sumę liczb 1, 2, 4 oraz 8.</p>
+<p>Opracowano następujący sposób graficznego kodowania liczb 1, 2, 4 oraz 8:</p>
+
+<div><table class="zad-przyklad">
+<tr><td><img src="logia07/2zad1a.gif" hspace="5" title="kod 1"></td>
+<td><img src="logia07/2zad1b.gif" hspace="5" title="kod 2"></td>
+<td><img src="logia07/2zad1c.gif" hspace="5" title="kod 3"></td>
+<td><img src="logia07/2zad1d.gif" hspace="5" title="kod 4"></td></tr>
+<tr><td><p class="center">1</td>
+<td><p class="center">2</td>
+<td><p class="center">3</td>
+<td><p class="center">4</td></tr>
+</table></div>
+
+
+<p>Zdefiniuj procedurę <span>KODSUM&nbsp;:liczba</span>, rysującą ciąg obrazków odpowiadający danej <span>:liczba</span>, przedstawionej jako najkrótsza (zawierająca najmniej składników) suma liczb <b>1</b>, <b>2</b>, <b>4</b> oraz <b>8</b>. Obrazki reprezentujące kolejne kodowane składowe są uporządkowane od lewej do prawej - od tego który reprezentuje największą z&nbsp;liczb do tego który reprezentuje najmniejszą z&nbsp;nich. Co drugi obrazek jest obrócony o&nbsp;180 stopni. Dana <span>:liczba</span> może przyjmować wartości z&nbsp;zakresu od <b>1</b> do&nbsp;<b>250</b>. Poniższe rysunki przedstawiają efekt wywołania KODSUM 51 oraz KODSUM 20.</p>
+
+<div class="art-img-center">
+<img src="logia07/2zad1e.gif" vspace="5" hspace="5" title="KODSUM 51">
+<img src="logia07/2zad1f.gif" hspace="5" title="KODSUM 20">
+</div>
+ 
+<p>Rysunek powinien w&nbsp;całości mieścić się na ekranie, a&nbsp;długość odcinka stanowiącego dolną podstawę powstającej figury ma być równa&nbsp;<b>500</b>.</p>
+
+<h4>Zadanie 2.</h4>
+<p>Zdefiniuj funkcję <span>ILEZ&nbsp;:słowo</span>, której daną jest dowolne słowo.</p>
+<p>Wynikiem funkcji jest liczba znaków znajdujących się w&nbsp;tym słowie pomiędzy skrajnymi samogłoskami, tj. pomiędzy pierwszą i&nbsp;ostatnią samogłoską, ale bez tych samogłosek.</p> 
+<p>Uznajemy, że samogłoskami są jedynie znaki: <b>a</b>, e<b></b>, <b>i</b>, <b>o</b>, <b>u</b> oraz&nbsp;<b>y</b>.</p>
+<p>W przypadku braku samogłosek w&nbsp;danej <span>:słowo</span>, wartością funkcji jest&nbsp;<b>-2</b>, a&nbsp;w&nbsp;przypadku gdy w&nbsp;słowie jest tylko jedna samogłoska, wartością funkcji jest&nbsp;<b>-1</b>.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ILEZ "hokuspokus</td>
+<td class="male"> jest 6.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEZ "klucz</td>
+<td class="male"> jest -1.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEZ "xxx</td>
+<td class="male"> jest -2.</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 3.</h4>
+
+<p>Zdefiniuj funkcję <span>SUMAS&nbsp;:s1&nbsp;:s2</span>, są dwa niepuste słowa, mogące składać się tylko z&nbsp;10 pierwszych małych liter alfabetu łacińskiego (tj. <b>a</b>, <b>b</b>, <b>c</b>, <b>d</b>, <b>e</b>, <b>f</b>, <b>g</b>, <b>h</b>, <b>i</b>, <b>j</b>). Poszczególne znaki danych słów są zakodowanymi cyframi dziesiętnymi, w&nbsp;ten sposób, że kolejnym literom alfabetu odpowiadają cyfry od <b>0</b> do <b>9</b>. Wynikiem funkcji jest słowo będące kodem sumy zakodowanych liczb. Zakładamy poprawność danych <span>:s1</span> i&nbsp;<span>:s2</span>.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">SUMAS "j "j</td>
+<td class="male"> jest "bi.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">SUMAS "baab "jjj</td>
+<td class="male"> jest "caaa.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

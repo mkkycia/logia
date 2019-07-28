@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu IV Warszawskiego Konkursu Informatycznego<br /> 
+rok szkolny 1997/98
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4 >Zadanie 1.</h4>
+<p>Zdefiniuj funkcję z&nbsp;jednym parametrem <span>DOSTU&nbsp;:listaliczb</span>, której wartością dla danej listy liczb całkowitych jest:</p>
+<ul>
+<li>ta sama lista liczb, jeśli jej suma wynosi sto,</li>
+<li>dana lista liczb całkowitych z dopisaną na końcu jedną liczbą, taką, że suma nowej listy wynosi 100.</li>
+</ul>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">DOSTU&nbsp;[35&nbsp;-15&nbsp;77]</td>
+<td class="male">ma wartość [35&nbsp;-15&nbsp;77&nbsp;3]</td></tr>
+<tr><td class="granat">DOSTU&nbsp;[35&nbsp;-15&nbsp;80]</td>
+<td class="male">ma wartość [35&nbsp;-15&nbsp;80]</td></tr>
+<tr><td class="granat">DOSTU&nbsp;[35&nbsp;-15&nbsp;77&nbsp;33]</td>
+<td class="male">ma wartość [35&nbsp;-15&nbsp;77&nbsp;33&nbsp;-30]</td></tr>
+<tr><td class="granat">DOSTU&nbsp;[]</td>
+<td class="male">ma wartość [100]</td></tr>
+</table>
+</div>
+
+<h4 >Zadanie 2.</h4>
+<p>Kwadrat o&nbsp;boku 16 można pokryć 85 jednakowymi płytkami w&nbsp;kształcie litery L (utworzonej z&nbsp;trzech jednostkowych kwadratów) i&nbsp;jedną płytką w&nbsp;kształcie kwadratu o&nbsp;boku 1. Poniższe rysunki przedstawiają dwa takie ułożenia różniące się położeniem kwadratowej płytki.</p>
+<div class="art-img-center">
+<img src="4wki/3zad2a.gif" title="POSADZKA 13 8" hspace="5">
+<img src="4wki/3zad2b.gif" title="POSADZKA 8 6" hspace="5">
+</div>
+<p>Kwadratowa płytka na rysunku pierwszym ma współrzędne [13,8] - leży w&nbsp;13 wierszu od góry i&nbsp;w&nbsp;8 kolumnie od lewej. Kwadratowa płytka na rysunku drugim ma współrzędne [8,6] - leży w&nbsp;8 wierszu od góry i&nbsp;w&nbsp;6 kolumnie od lewej. Kwadratowa płytka w&nbsp;lewym górnym rogu ma oczywiście współrzędne [1,1], a&nbsp;płytka w&nbsp;prawym dolnym rogu [16,16].<br>
+Napisz procedurę z&nbsp;dwoma parametrami <span>POSADZKA&nbsp;:w&nbsp;:k</span>, która dla danych wartości współrzędnych <span>:w&nbsp;:k</span> z&nbsp;zakresu [1..16], tworzy na środku ekranu możliwie duży rysunek kwadratu pokryty 85 płytkami w&nbsp;kształcie L i&nbsp;jedną płytką kwadratową o&nbsp;danych współrzędnych.</p>
+
+<h4 >Zadanie 3.</h4>
+<p>Kwadratową siatką o&nbsp;rozmiarze <b>n</b> nazywamy wycinek pokratkowanej kartki papieru mający <b>n*n</b> kratek. Pola kwadratowej siatki (tj. kratki) numerujemy kolejno wierszami od lewego górnego pola do prawego dolnego liczbami od <b>0</b> do <b>n*n-1</b>. Na przykład kwadratowa siatka o&nbsp;rozmiarze 8 ma 64 pola ponumerowane od 0 do 63, jak na rysunku poniżej:</p>
+<div class="art-img-center">
+<img src="4wki/3zad3.gif" hspace="5">
+</div>
+<p>Jeżeli rozmiar siatki jest parzysty, to można ja podzielić na cztery ćwiartki o&nbsp;identycznych rozmiarach. Cztery ćwiartki siatki numerujemy wg tej samej zasady jak pola:</p>
+<ul>
+<li>ćwiartka w&nbsp;lewym górnym rogu siatki ma numer&nbsp;0,</li>
+<li>ćwiartka w&nbsp;prawym górnym rogu ma numer&nbsp;1,</li>
+<li>ćwiartka w&nbsp;lewym dolnym rogu ma numer&nbsp;2,</li>
+<li>ćwiartka w&nbsp;prawym dolnym rogu ma numer&nbsp;3.</li>
+</ul>
+<p>Zdefiniuj funkcję z&nbsp;dwoma parametrami <span>NUMER_CWIARTKI&nbsp;:rozmiar&nbsp;:numer</span>, której wartością dla danego rozmiaru kwadratowej siatki, będącego parzystą liczbą całkowitą dodatnią, oraz numeru pola jest numer ćwiartki, w&nbsp;której leży to pole. Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">NUMER_CWIARTKI&nbsp;4&nbsp;5</td>
+<td class="male">ma wartość&nbsp;0</td></tr>
+<tr><td class="granat">NUMER_CWIARTKI&nbsp;4&nbsp;13</td>
+<td class="male">ma wartość&nbsp;2</td></tr>
+</table>
+</div>
+<p>Twoja funkcja będzie testowana tylko dla poprawnych danych. Może nie mieć wartości lub mieć wartość przypadkową, jeśli dane nie są poprawne, np. jeśli <span>:rozmiar</span> nie jest liczbą parzystą lub <span>:numer</span> jest za duży.</p>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

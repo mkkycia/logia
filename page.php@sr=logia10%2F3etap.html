@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;10
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (statki).</h4>
+<p>W grze w statki, każdy z graczy rysuje na swojej kartce mapę o wielkości 10 na 10 kwadratowych pól. Przed rozpoczęciem gry zaznacza na mapie jeden czteromasztowiec, dwa trójmasztowce, trzy dwumasztowce oraz cztery jednomasztowce. Liczba masztów statku określa, ile sąsiednich pól zajmuje on na mapie. Statki można ustawiać dowolnie, poziomo lub pionowo, nie wolno ich jednak wyginać. Różne statki nie mogą zajmować sąsiednich pól, ani stykać się rogami.</p>
+<p>Napisz procedurę <span>STATKI</span>, po wywołaniu której na ekranie zostanie narysowana plansza do gry w statki, o boku długości 400, wraz z losowo (ale poprawnie) rozmieszczonymi statkami, widocznymi jako zamalowane pola.<br />
+Poniżej przykładowy efekt wywołania procedury <span>STATKI</span>.</p>
+<div class="art-img-center">
+<img src="logia10/3zad1.gif" hspace="5" vspace="5" title="Przykładowy efekt wywołania STATKI">
+</div> 
+
+<h4>Zadanie 2 (kostka i moneta).</h4>
+<p>Gra, w którą bawią się dzieci, wymaga użycia jednej sześciennej kości (na jej ścianach jest od 1 do 6 oczek, suma liczby oczek na przeciwległych ścianach wynosi 7) i jednej polskiej monety. Rozpoczyna się od rzutu kością.</p>
+<p>Następnie grający rozgrywają kolejne tury gry. Tura polega na tym, że każdy z&nbsp;grających najpierw rzuca monetą, a&nbsp;następnie obraca kość:</p>
+<ul>
+  <li>jeśli wypadł orzeł, to górną ścianą kości staje się ta z bocznych ścian, na której jest najwięcej oczek,</li>
+  <li>jeśli wypadła reszka, to górną ścianą kości staje się ta z bocznych ścian, na której jest najmniej oczek.</li>
+</ul>
+<p>Liczba punktów zebranych przez gracza jest sumą liczby oczek widniejących na górnej ścianie kości po obrotach wykonanych przez tego gracza w rozegranych przez niego turach.</p>
+<p>Napisz funkcję <span>GRA :kość :moneta :limit</span>, analizującą przeprowadzoną grę.</p> 
+<p>Parametr <span>:kość</span> to liczba oczek na górnej ścianie kości po jej rzucie na początku gry. Parametr <span>:moneta</span> jest listą składającą się z list będących zapisami kolejnych tur. Zapis jednej tury jest listą składającą się z liter <span>o</span> i/lub <span>r</span>, oznaczających odpowiednio, orła bądź reszkę, wyrzucone monetą przez kolejnych graczy.</p>
+<p>Wynikiem funkcji jest lista zawierająca tyle elementów, ilu jest graczy. Każdy kolejny element tej listy jest numerem najwcześniejszej tury, w której liczba punktów zebranych przez kolejnego gracza osiągnęła co najmniej <span>:limit</span> (będący wartością trzeciego parametru funkcji), bądź zero, gdy <span>:limit</span> nie został przez niego osiągnięty do końca gry.</p>
+<p>Przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">GRA 3 [[o r][r r][r o]] 7</td>
+<td class="male"> jest [2 3].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">GRA 4 [[o][r][r]] 7</td>
+<td class="male"> jest [2].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">GRA 4 [[o r r][r o r]] 5</td>
+<td class="male"> jest [1 2 0].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (autobusy).</h4>
+<p>Odległości między sąsiednimi przystankami każdej linii w całej sieci autobusowej, obejmującej nie więcej niż sto przystanków, są identyczne. Napisz funkcję <span>DROGA :linie :p1 :p2</span>. Parametr <span>:linie</span> jest poprawną listą list, z których każda opisuje jedną linię. Opis linii jest listą numerów przystanków, przez które ta linia przebiega, przy czym zakładamy, że linia kursuje dwukierunkowo, tj. od pierwszego przystanku do ostatniego, a następnie od ostatniego do pierwszego. Wynikiem funkcji jest minimalna liczba przystanków (dokładniej: odcinków między przystankami), jaką należy przebyć, aby przejechać z przystanku o numerze <span>:p1</span> do przystanku o&nbsp;numerze <span>:p2</span> bez przesiadek, bądź <span>-1</span>, jeśli nie ma bezpośredniego połączenia.</p>
+<p>Przykłady:</p> 
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">DROGA&nbsp;[[1&nbsp;2&nbsp;3&nbsp;4&nbsp;5][6&nbsp;5&nbsp;4&nbsp;9&nbsp;8&nbsp;5&nbsp;2] [1 6 5 8 9]] 1 5</td>
+<td class="male"> jest 2 (bo pierwszą linią musimy przejechać cztery przystanki, druga nie łączy interesujących nas przystanków, a trzecią musimy przejechać dwa przystanki),</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">DROGA&nbsp;[[2&nbsp;4&nbsp;3&nbsp;1][4&nbsp;2&nbsp;1&nbsp;3]]&nbsp;2&nbsp;1</td>
+<td class="male"> jest 1 (pierwszą linią trzy przystanki, drugą jeden),</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">DROGA&nbsp;[[4&nbsp;3&nbsp;2&nbsp;1][3&nbsp;2]]&nbsp;2&nbsp;3</td>
+<td class="male"> jest 1 (obiema liniami wystarczy przejechać jeden przystanek).</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (robot).</h4>
+<p>Robot Gerard potrafi wykonać tylko cztery polecenia, nakazujące mu przejść w&nbsp;jedną z czterech stron świata. Napisz funkcję <span>ROBOT :trasa</span>, której wynikiem jest liczba odcinków, które robot przebył więcej niż raz. Parametr <span>:trasa</span> jest słowem opisującym sekwencję poleceń, w którym mogą występować jedynie litery <span>N</span>, <span>S</span>, <span>W</span> oraz <span>E</span>. Litery te oznaczają odpowiednio polecenie ruchu w kierunku północnym, południowym, zachodnim oraz wschodnim. Gerard może wykonać maksymalnie 500 ruchów.</p>
+<p>Przykłady:</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ROBOT "NESW</td>
+<td class="male"> jest 0,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ROBOT "NESWNESW</td>
+<td class="male"> jest 4,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ROBOT "NNNESSSSWNNNE</td>
+<td class="male"> jest 2.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

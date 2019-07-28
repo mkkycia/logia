@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h3>ZADANIA DRUGIEGO ETAPU<br>
+<h2 class="art-postheader">
+Zadania drugiego etapu II Warszawskiego Konkursu Informatycznego<br /> 
+rok szkolny 1995/96
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4 >Zadanie 1.</h4>
+<p>Zdefiniuj dwuparametrową funkcję <span>AB&nbsp;:n&nbsp;:m</span>, której wartością jest losowo utworzone słowo, złożone z&nbsp;<span>:n</span> liter A i&nbsp;<span>:m</span> liter B. Wywołanie funkcji <span>AB</span> z&nbsp;parametrami odpowiednio <span>:n</span> równym 2 i&nbsp;<span>:m</span> równym 3 zwróci jako wartość jedno z&nbsp;dziesięciu słów, jakie można utworzyć z&nbsp;dwóch liter A i&nbsp;trzech liter B, np. AABBB lub BABAB.</p>
+
+<h4 >Zadanie 2.</h4>
+<p>Każdą trasę na kwadratowej siatce <b>(n+1)*(n+1)</b>, która:</p>
+<ul>
+<li>składa się z&nbsp;poziomych i&nbsp;pionowych odcinków łączących sąsiednie punkty na siatce,</li>
+<li>zaczyna się od lewego dolnego i&nbsp;kończy w&nbsp;prawym górnym rogu siatki,</li>
+</ul>
+<p>można zakodować za pomocą odpowiedniego słowa złożonego z&nbsp;<b>n</b> liter A i&nbsp;<b>m</b> liter B. Przyjmujemy, że litera A jest kodem odcinka trasy biegnącego pionowo z&nbsp;dołu do góry, zaś litera B kodem odcinka biegnącego poziomo w&nbsp;prawo.</p>
+<p>Poniższe rysunki przedstawiają wywołania POPRZEK &quot;ABAABBBAAABBBBAA oraz POPRZEK &quot;ABBBBAAAAABBABBA.</p>
+<div class="art-img-center">
+<img src="2wki/2zad2a.gif" title="POPRZEK &quot;ABAABBBAAABBBBAA" hspace="15">
+<img src="2wki/2zad2b.gif" title="POPRZEK &quot;ABBBBAAAAABBABBA" hspace="15">
+</div>
+<p>Napisz jednoparametrową procedurę <span>POPRZEK&nbsp;:kod</span>, która dla dowolnego słowa danego jako wartość parametru <span>:kod</span> sprawdza, czy składa się ono z&nbsp;tej samej liczby <b>n</b> liter A i&nbsp;B. Jeśli nie (np. dla <span>POPRZEK&nbsp;"ABBBBAAAA</span>), to procedura powinna wypisać na ekranie komunikat: "niepoprawne dane", jeśli tak, powinna narysować na ekranie kwadratową siatkę <b>(n+1)*(n+1)</b> kropek, a&nbsp;na niej trasę, której kodem jest dane słowo. Zakładamy, że dane słowo będzie się składało z&nbsp;co najwyżej 16 liter, wyłącznie z&nbsp;wielkich A lub&nbsp;B.</p>
+
+<h4 >Zadanie 3.</h4>
+<p>Poniższy rysunek przedstawia mapę rzędu&nbsp;3:</p>
+<div class="art-img-center">
+<img src="2wki/2zad3a.gif" hspace="5">
+</div>
+<p>Mapa rzędu n jest kwadratową siatką kropek, utworzoną z&nbsp;<b>2n+1</b> poziomych rzędów po <b>2n+1</b> kropek w&nbsp;każdym rzędzie. Środkowe punkty na zachodniej, północnej, wschodniej i&nbsp;południowej krawędzi mapy oznaczamy odpowiednio literami W, N, E oraz&nbsp;S.<br>
+Trasa WNESW nazywamy każdą trasę na mapie spełniającą trzy warunki:</p>
+<ul>
+<li>składa się z&nbsp;jednostkowych poziomych i&nbsp;pionowych odcinków, łączących sąsiednie punkty na mapie,</li>
+<li>zaczyna się w&nbsp;punkcie W, następnie biegnie do N, do E, do S i&nbsp;wraca do&nbsp;W,</li>
+<li>ma minimalną długość.</li>
+</ul>
+<p>Mówimy, że trasa WNESW jest regularna, jeśli po jej obrocie o&nbsp;90<sup>o</sup> dookoła środka mapy otrzymamy tę samą trasę. Poniższy rysunek przedstawia przykładowe regularne trasy na mapie rzędu&nbsp;3:</p>
+<div class="art-img-center">
+<img src="2wki/2zad3b.gif" hspace="5">
+<img src="2wki/2zad3c.gif" hspace="5">
+</div>
+<p>Napisz procedurę <span>TRASA_REG&nbsp;:n</span>, która dla dowolnej wartości parametru <span>:n</span>, nie mniejszej niż 1 i&nbsp;nie większej niż&nbsp;6:</p>
+<ul>
+<li>rysuje na ekranie mapę rzędu&nbsp;<span>:n</span>,</li>
+<li>wykreśla na niej w&nbsp;sposób losowy regularną trasę WNESW.</li>
+</ul>
+<p>Procedurę należy napisać w&nbsp;taki sposób, aby każda regularna trasa WNESW mogła być efektem jej wywołania.</p>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

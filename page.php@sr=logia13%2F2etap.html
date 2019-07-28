@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;13
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (Mozaika).</h4>
+<p>Nowe budynki w Logianowie będą ozdobione mozaikami układanymi z kwadratowych kafelków w kolorach: czerwonym (<strong>c</strong>), zielonym (<strong>z</strong>), czarnym (<strong>x</strong>), białym (<strong>b</strong>) i fioletowym (<strong>f</strong>). Mozaiki są układane na podstawie kolorowych szablonów. Twórca szablonów jest miłośnikiem Juliusza Cezara i postanowił przy ich przygotowywaniu wykorzystać szyfr Cezara, polegający na cyklicznym zastępowaniu każdej kolejnej litery w alfabecie, literą występującą dalej o określoną liczbę pozycji, przy czym jeśli wykraczamy poza alfabet, to kolejne litery bierzemy z&nbsp;początku alfabetu.</p>
+<p>Napisz procedurę <span>MOZAIKA :kolory :klucz :wiersz</span>, po wywołaniu której na środku ekranu powstanie rysunek mozaiki, o szerokości 600 lub wysokości 300, opisanej przez parametry:</p>
+<ul>
+	<li>słowo <span>:kolory</span> określa kolory (alfabet) używane w danym szablonie oraz ich kolejność, kolory nie powtarzają się, </li>
+	<li>liczba <span>:klucz</span> definiuje sposób zastępowania kolorów i może przyjmować wartości od 0 do 100,</li>
+	<li>niepuste słowo <span>:wiersz</span>, które opisuje dolny wiersz mozaiki i może zawierać jedynie kolory wymienione w&nbsp;parametrze <span>:kolory</span>.</li>
+</ul>
+<p>Każdy kolejny wiersz powstaje przez zaszyfrowanie poprzedniego wiersza. Liczba wierszy jest o jeden większa od długości parametru <span>:kolory</span>. Na przykład dla alfabetu "xfzb i klucza 6, wiersz "xxxfffbbbxxx przechodzi w wiersz "zzzbbbfffzzz.</p>
+<p>W tabelce poniżej umieszczono przykłady zastępowania kolorów.</p>
+<table>
+<tr><th>:kolory</th><th>:klucz</th><th>przed zastąpieniem</th><th>po zastąpieniu</th></tr>
+<tr><td rowspan="4">"xfzb</td><td rowspan="4">6</td><td>czarny</td><td>zielony</td></tr>
+<tr><td>fioletowy</td><td>biały</td></tr>
+<tr><td>zielony</td><td>czarny</td></tr>
+<tr><td>biały</td><td>fioletowy</td></tr>
+
+<tr><th>:kolory</th><th>:klucz</th><th>przed zastąpieniem</th><th>po zastąpieniu</th></tr>
+<tr><td rowspan="3">"bzx</td><td rowspan="3">1</td><td>biały</td><td>zielony</td></tr>
+<tr><td>zielony</td><td>czarny</td></tr>
+<tr><td>czarny</td><td>biały</td></tr>
+
+</table>
+<p>Rysunki poniżej przedstawiają efekt wywołania MOZAIKA &quot;xfzb 6 &quot;xxxfffbbbxxx, MOZAIKA &quot;bzx 1 &quot;bzxzb</p>
+
+<div class="art-img-center">
+<img src="logia13/2zad1b.gif" hspace="5" title="MOZAIKA &quot;xfzb 6 &quot;xxxfffbbbxxx">
+<img src="logia13/2zad1a.gif" title="MOZAIKA &quot;bzx 1 &quot;bzxzb">
+</div>
+
+<h4>Zadanie 2 (Ślimak).</h4>
+<p>Napisz funkcję <span>KIEDY :x :y :z</span>, której wynikiem będzie liczba określająca, którego dnia ślimak znajdzie się na szczycie dziesięciometrowego słupa. Ślimak pierwszego dnia startuje u podstawy słupa. Każdego dnia wspina się o <span>:x</span> centymetrów. Każdej nocy osuwa się o <span>:y</span> centymetrów, chyba że natrafi na półkę - wtedy zatrzymuje się na niej. Półki znajdują się co <span>:z</span> centymetrów, licząc od podstawy słupa. Zakładamy, że <span>:x</span> jest większe od <span>:y</span>.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">KIEDY 300 100 100</td>
+<td class="male"> jest 4,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">KIEDY 5 3 2</td>
+<td class="male"> jest 250,</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (Pascal).</h4>
+<p>Trójkąt Pascala to trójkątna tablica liczb, skonstruowana w następujący sposób: na dwóch bokach trójkąta znajdują się jedynki, liczby wewnątrz trójkąta są sumą dwóch najbliższych liczb położonych w wierszu powyżej.</p>
+<p>Ola podaje Antkowi dwie liczby: numer wiersza oraz  pozycję w obrębie wiersza. Zadaniem Antka jest podanie odpowiedniej liczby w trójkącie Pascala. Pomóż Antkowi i napisz funkcję <span>PASCAL :w :p</span>. Parametr <span>:w</span> określa numer wiersza i może przyjmować wartości od <strong>1</strong> do <strong>2000</strong>. Parametr <span>:p</span> określa pozycję liczby w wierszu i może przyjmować wartości od <strong>1</strong> do <strong>4</strong>, a także od <strong><span>:w</span>-3</strong> do <span>:w</span>, przy czym <span>:w</span> nie jest mniejsze od <span>:p</span>. </p>
+<div class="art-img-center">
+<img src="logia13/2zad3.gif" hspace="5" title="Trójkąt Pascala">
+</div>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">PASCAL 5 3</td>
+<td class="male"> jest 6,</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">PASCAL 10 7</td>
+<td class="male"> jest 84.</td></tr>
+</table>
+
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

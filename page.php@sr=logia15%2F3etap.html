@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;15
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (szyfr).</h4>
+<p>Kuba koduje teksty za pomocą szyfrów obrazkowych. Najpierw ustala <em>alfabet</em> zawierający litery, które będą występować w szyfrowanym <em>słowie</em>. Następnie koduje <em>słowo</em> za pomocą prostokątów o różnych wymiarach. Wysokość prostokąta odpowiadającego kolejnej literze <em>słowa</em> zależy od jej pozycji w <em>alfabecie</em> i wynosi, odpowiednio, 10 dla pierwszej litery <em>alfabetu</em>, 20 dla drugiej, 30 dla trzeciej itd. Szerokość prostokąta zależy od pozycji litery w szyfrowanym <em>słowie</em> i jest równa 10 dla pierwszej litery <em>słowa</em>, 20 dla drugiej, 30 dla trzeciej itd. </p>
+<p>Julka odszyfrowuje zakodowany tekst – zdanie, w którym spacje zakodowane zostały za pomocą prostokątów o&nbsp;wysokości 0 (odcinków).</p>
+<p>Napisz dwuparametrową funkcję <span>deszyfr</span>, której wynikiem jest lista odkodowanych słów. Pierwszy parametr jest alfabetem i składa się z co najwyżej 26 liter (małe litery alfabetu łacińskiego). Drugi parametr to lista dwuelementowych list określających wysokości i szerokości prostokątów stanowiących elementy zaszyfrowanego zdania.</p>
+
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">deszyfr "acdeh [[10 20][30 10][50 40][20 30]]  </td>
+<td class="male">jest [dach].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">deszyfr "rklotam [[60 10][30 20][60 30][0 40][70 50][60 60][0 70][20 80][40 90][50 100][60 110]]</td>
+<td class="male"> jest [ala ma kota].</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">deszyfr('acdeh',[[10,20],[30,10],[50,40],[20,30]]) </td>
+<td class="male"> jest ['dach'].
+<tr><td class="male">Wynikiem </td><td class="granat">deszyfr('rklotam',[[60,10],[30,20],[60,30],[0,40],[70,50],[60,60],[0,70],[20,80],[40,90],[50,100],[60,110]])</td>
+<td class="male"> jest ['ala','ma','kota'].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 2 (redukcja).</h4>
+<table class="tab-lista">
+<tr>
+<td><p>Janek bawi się cyframi i zapisuje je na kwadratowej tabliczce o&nbsp;wymiarach <span>n x n</span> (2 ≤ n ≤ 20).</p>
+<td class="male"><img src="logia15/3zad2a.gif" hspace="5" title="Rysunek pomocniczy"><br />Przykładowa tabliczka o wymiarach 3x3</td>
+</tr>
+<tr>
+<td><p>Następnie przechyla tabliczkę i liczby spadają w jednym z&nbsp;czterech kierunków.</p>
+<td class="male"><img src="logia15/3zad2b.gif" hspace="5" title="Rysunek pomocniczy"><br />Ta sama tabliczka bezpośrednio po pochyleniu w&nbsp;różnych kierunkach (odpowiednio: w lewo, w prawo, w&nbsp;górę, bądź w dół)</td>
+</tr>
+<tr>
+<td><p>Dodatkowo następuje redukcja – jeśli dwie sąsiednie (licząc zgodnie z kierunkiem spadania) liczby są takie same, to zastępowane są ostatnią cyfrą ich sumy. Zastępowanie kontynuowane jest dla pozostałych liczb w wierszu (kierunki lewo-prawo) lub kolumnie (kierunki góra-dół). Analiza danego wiersza/kolumny powtarzana jest aż do momentu, gdy nie uda się dokonać żadnej takiej zamiany.</p>
+<td class="male"><img src="logia15/3zad2c.gif" hspace="5" title="Rysunek pomocniczy"><br />Ta sama tabliczka po pochyleniu w różnych kierunkach (odpowiednio: w lewo, w prawo, w górę, bądź w dół) i&nbsp;redukcji </td>
+</tr>
+</table>
+
+<p>Napisz dwuparametrową funkcję <span>redukcja</span>, której pierwszym parametrem jest lista list opisujących kolejne wiersze tabliczki (<strong>0</strong> – oznacza puste miejsce), a drugim – słowo opisujące sekwencję kolejnych pochyleń (<strong>l</strong> oznacza kierunek w&nbsp;lewo, <strong>p</strong> – prawo, <strong>g</strong> – górę, <strong>d</strong> – dół) . Wynikiem jest stan tabliczki po przekształceniach. Maksymalna długość słowa będącego drugim parametrem to <strong>1000</strong>.</p>
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja [[0 2 4][4 4 8][4 0 8]] "dldld </td>
+<td class="male">jest [[0 0 0][0 0 0][4 0 0]].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja [[1 1 1 1][1 1 1 1][1 1 1 1][1 1 1 1]] "lpdg </td>
+<td class="male"> jest [[0 0 0 6][0 0 0 0][0 0 0 0][0 0 0 0]].</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja([[0,2,4],[4,4,8],[4,0,8]],'dldld') </td>
+<td class="male"> jest [[0,0,0],[0,0,0],[4,0,0]].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">redukcja([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]],'lpdg')</td>
+<td class="male"> jest [[0,0,0,6],[0,0,0,0],[0,0,0,0],[0,0,0,0]].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (wykreślanka).</h4>
+<p>Sławek bawi się słowem i usuwa z niego litery. Chce, by pewne trzy wyróżnione litery występowały w zadanej kolejności, choć niekoniecznie obok siebie. Zapisuje wszystkie powstałe w ten sposób słowa w uporządkowanej alfabetycznie liście.</p>
+<p>Napisz funkcję <span>abc</span>, o trzech parametrach, której pierwszym parametrem jest słowo, którym bawi się Sławek, nie dłuższe niż dziesięcioliterowe, zawierające jedynie małe litery alfabetu łacińskiego. Drugim parametrem jest trzyliterowe słowo, składające się z liter wyróżnionych przez Sławka. Wynikiem funkcji jest to słowo z listy Sławka, które znajduje się w niej na pozycji określonej trzecim parametrem funkcji. Trzeci parametr może przyjmować wartości od <strong>1</strong> do <strong>5000</strong>. Jeśli jego wartość jest większa niż liczba elementów listy Sławka, to wartością funkcji jest słowo puste. </p>
+
+<p>Przykłady – Logo:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">abc "abebc "abc 5 </td>
+<td class="male">jest "aebc (bo jest piątym elementem listy Sławka: [abbc abc abebc abec aebc]).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">abc&nbsp;"xabacxy&nbsp;"abc&nbsp;3</td>
+<td class="male"> jest "abacxy (w tym przypadku początkowe elementy listy Sławka to "abac, "abacx, "abacxy).</td></tr>
+</table>
+</div>
+<p>Przykłady – Python:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">abc('abebc','abc',5) </td>
+<td class="male"> jest aebc (bo jest piątym elementem listy Sławka: ['abbc','abc','abebc','abec','aebc']).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">abc('xabacxy','abc',3) </td>
+<td class="male"> jest abacxy (w tym przypadku początkowe elementy listy Sławka to 'abac','abacx','abacxy').</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 4 (jaszczurka).</h4>
+<p>Wzdłuż ulicy stoją domy. Jedne z nich stykają się bocznymi ścianami, a pomiędzy innymi może być wolne miejsce. Jaszczurka wędruje po dachach. Rozpoczyna swoją podróż na poziomie ziemi przed pierwszym domem, wspinając się pionowo na jego dach. Następnie porusza się po kolejnych dachach, pomiędzy domami wchodząc wyżej (gdy kolejny dom jest wyższy od poprzedniego) lub schodząc (gdy kolejny dom jest niższy), być może nawet do poziomu ziemi (gdy napotka wolne miejsce pomiędzy kolejnymi domami). Swoją podróż kończy na poziomie ziemi za ostatnim domem.</p>
+<p>Napisz jednoparametrową funkcję <span>droga</span>, której parametrem jest lista, składająca się z dwuelementowych list opisujących szerokości i wysokości kolejnych domów oraz ewentualnie pojedynczych liczb opisujących odległości pomiędzy domami. Wynikiem funkcji jest długość drogi przebytej przez jaszczurkę.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">W Logo - wynikiem </td><td class="granat">droga [[40 20][50 30]10[20 20]20[40 10]] </td>
+<td class="male">jest 300.</td></tr>
+<tr><td class="male">W Pythonie - wynikiem </td><td class="granat">droga([[40,20],[50,30],10,[20,20],20,[40,10]]) </td>
+<td class="male"> jest 300.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

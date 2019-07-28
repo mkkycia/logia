@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;09
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (czekoladka).</h4>
+<p>Harcerski szyfr <i>Czekoladka</i> polega na rysowaniu kolejnych zaszyfrowanych liter danego wyrazu. Aby zaszyfrować literę, rysujemy fragment ramki, w&nbsp;którym ta litera jest zapisana, zgodnie z&nbsp;rysunkami obok. Ponieważ w&nbsp;jednej ramce najczęściej znajdują się dwie litery, kropka pokazuje, czy mamy na myśli literę z&nbsp;lewej, czy z&nbsp;prawej strony. Dla liter T, U, W, Y i&nbsp;Z rysowanie kropki jest zbędne (choć nie jest błędem).</p>
+<div class="art-img-center">
+<img src="logia09/2zad1a.gif" hspace="5" title="Szyfrowanie liter">
+<img src="logia09/2zad1b.gif" hspace="5" title="Szyfrowanie liter">
+<img src="logia09/2zad1c.gif" hspace="5" title="Szyfrowanie liter">
+</div>
+
+<p>Zdefiniuj procedurę <span>CZEKOLADKA :wyraz</span>, której daną może być słowo utworzone z&nbsp;wielkich liter (wybranych spośród tych, które znajdują się na rysunkach powyżej), o&nbsp;długości od 2 do 30 znaków. Procedura tworzy na środku ekranu rysunek przedstawiający zaszyfrowany wyraz zgodnie z&nbsp;regułami szyfru <i>Czekoladka</i>.</p> 
+<p>Procedura przedstawia wyraz w postaci graficznej, zgodnie z&nbsp;następującymi zasadami:</p>
+<ul>
+  <li>szerokość rysunku przedstawiającego zaszyfrowany wyraz wynosi 700,</li>
+  <li>rysunki odpowiadające kolejnym szyfrowanym literom są tej samej wysokości,</li>
+  <li>szerokość odstępu pomiędzy zaszyfrowanymi literami wynosi 1/4 wysokości rysunku,</li>
+  <li>szerokość zaszyfrowanych liter od A do S jest dwa razy większa od ich wysokości,</li>
+  <li>średnica kropki rysowanej w&nbsp;ramkach wynosi 1/3 wysokości litery.</li>
+</ul>
+<p>Rysunki poniżej przedstawiają efekt wywołania procedury <span>Czekoladka</span> dla wyrazów LOGO, SZYBA, TRATWA.</p>
+
+<div class="art-img-center">
+<img src="logia09/2zad1d.gif" hspace="5" title="CZEKOLADKA &quot;LOGO">
+<img src="logia09/2zad1e.gif" hspace="5" title="CZEKOLADKA &quot;SZYBA">
+<img src="logia09/2zad1f.gif" hspace="5" title="CZEKOLADKA &quot;TRATWA">
+</div>
+
+
+<h4>Zadanie 2 (liczby pomiędzy pierwszymi).</h4>
+<p>Asia bada liczby pierwsze. Dowiedziała się, że jest ich bardzo dużo, ale na przykład zero i&nbsp;jedynka nie są liczbami pierwszymi. Pewnego dnia w&nbsp;encyklopedii znalazła następującą definicję: "<i>Liczbami pomiędzy pierwszymi</i> nazywamy liczby będące średnią arytmetyczną kolejnych dwóch liczb pierwszych większych od 2 (ang. <i>interprime numbers</i>). Pięć najmniejszych liczb pomiędzy pierwszymi to: 4, 6, 9, 12, 15.".</p>
+<p>Pomóż Asi wyszukać <i>liczby pomiędzy pierwszymi</i>. Napisz funkcję <span>LLPP&nbsp;:pocz&nbsp;:kon</span>, która zliczy wszystkie liczby pomiędzy pierwszymi większe od <span>:pocz</span> i&nbsp;jednocześnie mniejsze od <span>:kon</span>. Parametr <span>:pocz</span> jest liczbą większą od zera, a&nbsp;parametr <span>:kon</span> jest liczbą mniejszą lub równą 10000.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">LLPP 5 7</td>
+<td class="male"> jest 1 (bo 6 jest liczbą pomiędzy pierwszymi).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">LLPP 7 16</td>
+<td class="male"> jest 3 (bo 9, 12 i&nbsp;15 są liczbami pomiędzy pierwszymi).</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (duże liczby).</h4>
+<p>Staś interesuje się dużymi liczbami. Zastanawiał się, czy jest możliwe, aby po pomnożeniu cyfr dużej liczby otrzymać liczbę pierwszą.</p>
+<p>Pomóż Stasiowi rozwiązać ten problem. Napisz funkcję <span>ICP :x</span>, której daną <span>:x</span> jest niepuste słowo złożone wyłącznie z&nbsp;cyfr (maksymalnie 100 cyfr), a&nbsp;wynikiem wartość logiczna prawda, gdy iloczyn cyfr danej <span>:x</span> jest liczbą pierwszą, a&nbsp;fałsz, gdy iloczyn cyfr danej <span>:x</span> nie jest liczbą pierwszą.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ICP "121</td>
+<td class="male"> jest prawda.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ICP "999</td>
+<td class="male"> jest fałsz.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

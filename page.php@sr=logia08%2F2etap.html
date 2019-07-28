@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;08
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1.</h4>
+<p>Alek i Olek postanowili rozegrać mecz rzucając kostkami do gry. Umówili się, że w&nbsp;każdej partii meczu każdy z&nbsp;nich rzuca kilkoma kostkami. Daną partię wygrywa ten z&nbsp;nich, który uzyska większą sumę oczek. Jeśli uzyskają taką samą sumę, to partia kończy się remisem. Cały mecz wygrywa ten z&nbsp;chłopców, który wygra więcej partii. Jeśli Alek i&nbsp;Olek wygrają taką samą liczbę partii, to mecz kończy się remisem. Ela, młodsza siostra Alka, notowała na kartce wszystkie wyniki rzutów wykonywanych przez chłopców. Pomóż Eli wskazać zwycięzcę meczu.</p>
+<p>Napisz funkcję <span>MECZ&nbsp;:wyniki&nbsp;:n</span>, której wynikiem będzie imię chłopca, który wygrał mecz lub słowo <b>"Remis</b>. Dana <span>:wyniki</span> określa liczby oczek na kostkach podczas kolejnych partii, w&nbsp;obrębie jednej partii najpierw są wyniki Alka, potem Olka. Dana <span>:n</span> określa iloma kostkami chłopcy rzucali. Zakładamy, że chłopcy rzucali nie więcej niż <b>6</b> kostkami i&nbsp;rozegrali nie więcej niż <b>10</b> partii.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">MECZ "1231 1</td>
+<td class="male"> jest "Remis - chłopcy rozegrali dwie partie rzucając jedną kostką, pierwszą partię wygrał Olek (2 oczka wobec 1 oczka Alka), drugą Alek.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">MECZ "213345325166 2</td>
+<td class="male"> jest "Olek - chłopcy rozegrali 3 partie rzucając dwiema kostkami, Olek wygrał dwie partie (pierwszą 6 do 3 i&nbsp;trzecią 12 do 6), drugą przegrał (5 do 9). </td></tr>
+</table>
+</div>
+
+<h4>Zadanie 2.</h4>
+<p>Jasia fascynują liczby pierwsze i&nbsp;doskonałe. Liczba doskonała to taka liczba naturalna, która jest równa sumie swoich podzielników właściwych, czyli podzielników mniejszych od tej liczby. Na przykład 28 jest liczbą doskonałą, bo 28=1+2+4+7+14. Liczb doskonałych jest niewiele, do 10000 tylko cztery (6, 28, 496 i&nbsp;8128). Jaś postanowił "złagodzić" definicję liczby doskonałej i&nbsp;wymyślił liczby "prawie doskonałe", tj. takie, które są wielokrotnością sumy swoich podzielników właściwych. Jaś zastanawiał się, ile jest takich liczb. Pomóż Jasiowi policzyć, ile takich liczb jest w&nbsp;zadanym przedziale.</p>
+<p>Napisz funkcję <span>ILEPD&nbsp;:m&nbsp;:n</span>, której wynikiem jest liczba liczb "prawie doskonałych" nie mniejszych niż <span>:m</span> i&nbsp;nie większych niż <span>:n</span>. Dane <span>:m</span> i&nbsp;<span>:n</span> to liczby całkowite dodatnie mniejsze od 10000. Zakładamy, że <span>:m</span> nie przekracza <span>:n</span>. Postaraj się napisać funkcję <span>ILEPD</span> w&nbsp;taki sposób, aby Jasio nie czekał długo na wynik.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ILEPD 10 100</td>
+<td class="male"> jest 22.</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 3.</h4>
+<p>Napisz funkcję <span>MAXX&nbsp;:słowo</span>, gdzie <span>:słowo</span> jest dowolnym niepustym słowem składającym się jedynie z&nbsp;małych liter alfabetu łacińskiego. Wynikiem funkcji jest najdłuższe podsłowo (fragment słowa - ciąg kolejnych znaków), które rozpoczyna się i&nbsp;kończy się tym samym znakiem. Jeśli w&nbsp;danym słowie jest wiele takich najdłuższych podsłów, to wynikiem jest dowolne z&nbsp;nich.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">MAXX "bbbaaubueytwyetrywax</td>
+<td class="male"> jest "aaubueytwyetrywa.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">MAXX "abcdefghij</td>
+<td class="male"> jest dowolny znak danego słowa.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

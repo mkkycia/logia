@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Mazowieckiego Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;02, Logo i&nbsp;algorytmy
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<p><b>Wędrówki pionka po nieskończonej siatce</b></p>
+<p>Przyjmujemy - podobnie jak w&nbsp;zadaniach etapu 2 - że pionek mający postać żółwia porusza się po nieskończonej kwadratowej siatce punktów jak na poniższym rysunku.<br> 
+Z&nbsp;dowolnego punktu siatki, w&nbsp;którym się aktualnie znajduje, może wykonać jeden z&nbsp;8 ruchów:</p>
+<dl>
+<dd>ruch 1 - [2 1]  o&nbsp;2 oczka w&nbsp;górę i&nbsp;1 w&nbsp;prawo,
+<dd>ruch 2 - [1 2]  o&nbsp;1 oczko w&nbsp;górę i&nbsp;2 w&nbsp;prawo,
+<dd>ruch 3 - [-1 2]  o&nbsp;1 oczko w&nbsp;dół i&nbsp;2 w&nbsp;prawo,
+<dd>ruch 4 - [-2 1]  o&nbsp;2 oczka w&nbsp;dół i&nbsp;1 w&nbsp;prawo,
+<dd>ruch 5 - [-2 -1]  o&nbsp;2 oczka w&nbsp;dół i&nbsp;1 w&nbsp;lewo,
+<dd>ruch 6 - [-1 -2]  o&nbsp;1 oczko w&nbsp;dół i&nbsp;2 w&nbsp;lewo,
+<dd>ruch 7 - [1 -2]  o&nbsp;1 oczko w&nbsp;górę i&nbsp;2 w&nbsp;lewo,
+<dd>ruch 8 - [2 -1]  o&nbsp;2 oczka w&nbsp;górę i&nbsp;1 w&nbsp;lewo.
+</dl>
+<div class="art-img-center">
+<img src="logia02/3zad1a.gif" title="Siatka punktów" hspace="5">
+</div>
+<p>Każdą drogę żółwia po siatce można zakodować w&nbsp;postaci liczby, w&nbsp;której występują wyłącznie cyfry od 1 do 8 - numery kolejnych ruchów. Na przykład: kodem drogi na rysunku przypominającego gwiazdę, zaczynającej się w&nbsp;punkcie start, jest liczba 1278563; kodem drogi na drugim rysunku, zaczynającej się w&nbsp;punkcie start, jest liczba 21456782.</p>
+<div class="art-img-center">
+<img src="logia02/3zad1b.gif" title="RYSDR 1278563" hspace="1">
+<img src="logia02/3zad1c.gif" title="RYSDR 21456782" hspace="1">
+</div>
+<p><b>Zakresem drogi</b> nazywamy najmniejszy prostokątny wycinek siatki, o&nbsp;bokach w&nbsp;kierunku pionowym i&nbsp;poziomym, w&nbsp;którym leżą wszystkie punkty danej drogi. Zakresy te są widoczne na powyższych rysunkach.</p>
+
+<h4>Zadanie 1.</h4>
+<p>Zdefiniuj polecenie <span>RYSDR&nbsp;:dr</span>, którego skutkiem będzie utworzenie na środku ekranu możliwie dużego rysunku danej drogi, na tle jej zakresu z&nbsp;zaznaczonym za pomocą słowa start punktem początkowym.</p>
+<p><b>Pionki na nieskończonej taśmie</b></p>
+<div class="art-img-center">
+<img src="logia02/3zad2.gif" title="RYSDR 21456782" hspace="5">
+</div>
+<p>Każdy układ skończonej liczby pionków na nieskończonej taśmie pól, jak na rysunku powyżej, można zapisać za pomocą liczby całkowitej nieujemnej nazywanej kodem dziesiętnym układu, utworzonej w&nbsp;następujący sposób:</p>
+<p>najpierw dane ustawienie zapisujemy w &nbsp;postaci słowa zerojedynkowego: cyfra 0 oznacza, że odpowiednie pole jest wolne, a&nbsp;cyfra 1, że stoi na nim pionek. Skrajne puste pola na lewo i&nbsp;prawo od układu pionków pomijamy.<br>
+Zerojedynkowym zapisem układu pionków na rysunkach a, b i&nbsp;c są odpowiednio słowa: 11111, 11111010011101111 oraz 11011011.<br>
+Następnie każde słowo zerojedynkowe traktujemy jako dwójkowy zapis liczb i&nbsp;tłumaczymy na zapis dziesiętny.</p>
+<p>Układy na rysunkach a, b i&nbsp;c mają następujące kody dziesiętne: 31, 128239 oraz 219.</p>
+
+<h4>Zadanie 2.</h4>
+<p>Zdefiniuj funkcję <span>DŁMP&nbsp;:kd</span> (długość maksymalnego łańcucha pionków), która mając dany kod dziesiętny układu pionków daje w&nbsp;wyniku długość maksymalnego łańcucha pionków, tzn. nieprzerwanej sekwencji pionków, w&nbsp;tym układzie.</p>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">DŁMP 31</td>
+<td class="male">powinno dać wynik 5,</td></tr>
+<tr><td class="granat">DŁMP 128239</td>
+<td class="male">powinno dać wynik 5,</td></tr>
+<tr><td class="granat">DŁMP 219</td>
+<td class="male">powinno dać wynik 2.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3.</h4>
+<p>Wolno nam dostawić 1 pionek  w&nbsp;dowolnym pustym polu na taśmie. Musimy go wstawić tak, aby utworzyć możliwie najdłuższy łańcuch pionków. Zdefiniuj funkcję <span>PLOMBA&nbsp;:kd</span>, która daje w&nbsp;wyniku kod nowego ustawienia, jakie można utworzyć z&nbsp;danego ustawienia przez dodanie 1 pionka, w&nbsp;taki sposób, aby otrzymać maksymalnie długi łańcuch pionków.<br>
+W&nbsp;przypadku jeśli takie nowe ustawienie o&nbsp;maksymalnym łańcuchu pionków można otrzymać na wiele sposobów, wynikiem funkcji powinien być kod ustawienia, reprezentowanego przez najmniejszą liczbę.</p>
+<p>Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">PLOMBA 31</td>
+<td class="male">powinno dać wynik 63,</td></tr>
+<tr><td class="granat">PLOMBA 128239</td>
+<td class="male">powinno dać wynik 128255,</td></tr>
+<tr><td class="granat">PLOMBA 219</td>
+<td class="male">powinno dać wynik 223.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4.</h4>
+<p>Układ pionków na taśmie można też zakodować w&nbsp;postaci listy liczb całkowitych. Możemy przyjąć, że każdy łańcuch pionków na taśmie będzie reprezentowany przez jego długość, a&nbsp;każda sekwencja pustych pól przez liczbę przeciwną do jej długości. W&nbsp;tym systemie kodem układu 11101001111 będzie lista [3 -1 1 -2 4].<br>
+Zdefiniuj funkcję <span>KL&nbsp;:kd</span> która dla danego kodu dziesiętnego układu daje w&nbsp;wyniku jego kod listowy.</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">KL 31</td>
+<td class="male">powinno dać wynik [5],</td></tr>
+<tr><td class="granat">KL 128239</td>
+<td class="male">powinno dać wynik [5 -1 1 -2 3 -1 4],</td></tr>
+<tr><td class="granat">KL 219</td>
+<td class="male">powinno dać wynik [2 -1 2 -1 2].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

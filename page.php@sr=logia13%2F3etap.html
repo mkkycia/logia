@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;13
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (Przekładanie kulek).</h4>
+<table class="tab-lista">
+<tr>
+<td><p>Olek i Ala bawią się czerwonymi i zielonymi kulkami oraz zestawem pudełek ułożonych w rzędzie. Ala wkłada kulki do pudełek, po jednej do każdego. Następnie Olek przekłada kulki, wyjmując dowolne dwie z nich i zamieniając je miejscami. Zabawa kończy się, gdy uzyskany zostanie dwubarwny naprzemienny układ: </p>
+<td><img src="logia13/3zad1.gif" hspace="5" title="Rysunek pomocniczy"></td>
+</tr></table>
+<p>w&nbsp;pierwszym pudełku kulka czerwona, w drugim zielona, w trzecim czerwona, w czwartym zielona itd. Jeśli zabraknie kulek jednego koloru, to na końcu rzędu pozostaje ciąg kulek w drugim kolorze. Olek stara się uporządkować kulki w&nbsp;możliwie najmniejszej liczbie kroków, aby Ala nie zaczęła się nudzić.</p>
+<p>Pomóż Olkowi i napisz funkcję <span>KULKI :s</span> obliczającą, ile co najmniej zamian musi wykonać. Parametr <span>:s</span> jest niepustym słowem złożonym z liter <strong>c</strong> oraz <strong>z</strong>, o maksymalnej długości <strong>100</strong>, opisującym początkowy układ kulek.</p>
+<p>Przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">KULKI "czczczzz</td>
+<td class="male"> jest 0 (kulek nie trzeba przekładać).</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">KULKI&nbsp;"czczzczz</td>
+<td class="male"> jest 1 (wystarczy zamienić miejscami kulki z piątego i szóstego pudełka, aby otrzymać końcowy układ).</td></tr>
+</table>
+</div></td>
+
+<h4>Zadanie 2 (Okrągły stół).</h4>
+<p>Przy okrągłym stole siedzi n uczestników spotkania, na krzesłach ponumerowanych od 1 do n. Kolejno co k-ta osoba wstaje i opuszcza spotkanie. Zadaniem Antka jest wskazanie osoby, która pozostanie przy stole jako ostatnia. </p>
+<p>Pomóż Antkowi i napisz funkcję <span>OSTATNI :n :k</span>. Wynikiem funkcji jest numer krzesła zajętego przez uczestnika spotkania, który pozostanie przy stole. Parametry <span>:n</span> i <span>:k</span> mogą przyjmować wartości z zakresu od <strong>1</strong> do <strong>100</strong>.</p>
+<p>Przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">OSTATNI&nbsp;7&nbsp;3 </td>
+<td class="male"> jest&nbsp;4 (kolejne osoby, opuszczające spotkanie, siedzą na krzesłach o numerach: 3, 6, 2, 7, 5, 1)</td></tr> 
+<tr><td class="male">Wynikiem </td><td class="granat">OSTATNI 6 2</td>
+<td class="male"> jest&nbsp;5 (kolejne osoby, opuszczające spotkanie, siedzą na krzesłach o numerach: 2, 4, 6, 3, 1)</td></tr></table>
+</div>
+
+<h4>Zadanie 3 (Liczby binarne).</h4>
+<p>Ola uwielbia zabawy z liczbami. Wie także, że w systemie dwójkowym występują tylko dwie cyfry: zero i jedynka. Ola lubi powtarzające się układy elementów, więc wymyśliła następujące zadanie:</p>
+<p>Prosi mamę o podanie liczby dwójkowej i szuka najmniejszej liczby, jaką należy odjąć od podanej przez mamę, aby w wyniku powstała liczba, w której pierwsza cyfra jest jedynką, druga zerem, trzecia jedynką itd.</p>
+<p>Pomóż Oli i napisz funkcję <span>ILEOD :liczba</span>. Parametr <span>:liczba</span> jest słowem reprezentującym liczbę dodatnią w&nbsp;systemie dwójkowym. Wynikiem funkcji jest słowo reprezentujące najmniejszą liczbę binarną, jaką należy odjąć od parametru, aby otrzymać liczbę, w której naprzemiennie występują jedynki i zera. Długość parametru <span>:liczba</span> jest nie większa niż <strong>30</strong>.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ILEOD "101</td>
+<td class="male"> jest "0.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEOD "111</td>
+<td class="male"> jest "10.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEOD "1101</td>
+<td class="male"> jest "11.</td></tr>
+</table>
+
+</div>
+
+<h4>Zadanie 4 (Latarnie).</h4>
+<p>Na prostokątnym placu stoją w rzędach latarnie. Kuba ma rozstrzygnąć, pod którą latarnią jest najjaśniej. Liczba latarń w każdym rzędzie jest taka sama. Odległości pomiędzy sąsiednimi latarniami w rzędzie i pomiędzy rzędami są identyczne. Każda z latarń emituje światło o natężeniu określonym liczbą od <strong>0</strong> (nie świeci - zepsuła się lub nikt jej nie włączył) do <strong>9</strong>.</p> 
+<p>Latarnia oświetla miejsce, na którym stoi, a także miejsca pod ośmioma (lub mniej, jeśli znajduje się na krawędzi placu) latarniami, w następujący sposób:</p>
+<ul>
+	<li>miejsce, gdzie stoi latarnia, jest oświetlane przez nią z jasnością równą natężeniu światła tej latarni,</li>
+	<li>miejsca pod sąsiednimi latarniami w rzędzie, a także stojącymi na tych samych pozycjach w dwóch sąsiednich rzędach, są przez nią oświetlone z dwukrotnie mniejszą jasnością,</li>
+	<li>miejsca pod latarniami stojącymi najbliżej na skos od danej latarni (tj. znajdujące się w sąsiednich rzędach na pozycji różniącej się o jeden), są przez nią oświetlone z trzykrotnie mniejszą jasnością,</li>
+	<li>zaniedbujemy wpływ latarni na oświetlenie miejsc położonych dalej niż ww., pomijamy wysokość latarni.</li>
+</ul>
+<p>Wyznaczając jasność w danym miejscu sumujemy składowe jasności.</p> 
+<p>Pomóż Kubie i napisz funkcję <span>MAXJ :latarnie</span>, której wynikiem jest dwuelementowa lista określająca numer rzędu i&nbsp;numer latarni, pod którą jest najjaśniej. Parametr <span>:latarnie</span> jest listą list opisujących kolejne rzędy. Każdy rząd opisany jest listą zawierającą jednocyfrowe liczby określające natężenie światła kolejnych latarń w tym rzędzie. Zakładamy, że dane są tak dobrane, że jest tylko jedna latarnia, pod którą jest najjaśniej. Liczby rzędów i latarń w&nbsp;rzędzie są dodatnie, nie większe niż <strong>20</strong>.</p>
+
+<p>Przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">MAXJ [[1 2 3 2][0 0 1 2]]</td>
+<td class="male"> jest [1 3],</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">[[8 1 1][4 6 0][6 2 1]]</td>
+<td class="male"> jest [2 1].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">[[1][6][3][5][3]]</td>
+<td class="male"> jest [3 1].</td></tr>
+</table> 
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

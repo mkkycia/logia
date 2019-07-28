@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;07
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (wykres słowa).</h4>
+<p>Napisz procedurę <span>WYKS&nbsp;:wyraz</span>, która rysuje na środku ekranu wykres słowa w&nbsp;postaci kwadratu o&nbsp;boku długości <b>400</b>, składającego się z&nbsp;pewnej liczby prostokątów o&nbsp;tych samych wymiarach.</p>
+<p>Parametr <span>:wyraz</span> jest niepustym słowem składającym się z&nbsp;małych liter alfabetu łacińskiego, mającym nie więcej niż <b>40</b> znaków.</p> 
+<p>Liczbę prostokątów w poziomie wyliczamy znajdując tę literę słowa <span>:wyraz</span>, która zajmuje najdalszą pozycję w&nbsp;alfabecie (dla litery <b>a</b> jest to <b>1</b>, dla litery <b>b</b> - <b>2</b>, dla litery <b>c</b> - <b>3</b>, ..., dla litery <b>z</b> - <b>26</b>). Liczba prostokątów w&nbsp;pionie jest równa liczbie wystąpień tej litery słowa <span>:wyraz</span>, która najwięcej razy występuje w&nbsp;tym słowie.</p> 
+<p>Każde wystąpienie litery jest reprezentowane przez zamalowanie prostokąta. Jeśli litera występuje wielokrotnie, to jest reprezentowana przez ciąg zamalowanych prostokątów w&nbsp;pionie. Skrajny lewy pion odpowiada literze <b>a</b>, skrajny prawy - literze o&nbsp;najdalszej pozycji w&nbsp;alfabecie występującej w&nbsp;słowie <span>:wyraz</span>. W&nbsp;pionie, powyżej pustego prostokąta nie może wystąpić zamalowany.</p>
+<p>Poniższe rysunki przedstawiają efekt wywołania WYKS &quot;alabama, WYKS &quot;baba oraz WYKS &quot;celnik.</p>
+<div class="art-img-center">
+<img src="logia07/3zad1a.gif" hspace="5" vspace="5" title="WYKS &quot;alabama">
+<img src="logia07/3zad1b.gif" hspace="2" vspace="5" title="WYKS &quot;baba">
+<img src="logia07/3zad1c.gif" hspace="2" vspace="5" title="WYKS &quot;celnik">
+</div>
+
+<h4>Zadanie 2 (liczby palindromiczne).</h4>
+<p>Liczba palindromiczna - jest to taka liczba, która po odczytaniu zarówno od lewej, jak i&nbsp;prawej strony daje tę samą wartość. Liczbami palindromicznymi są na przykład liczby <b>7</b>, <b>121</b>, <b>5445</b>.</p>
+<p>Napisz funkcję <span>LICZPAL&nbsp;:liczby</span>, gdzie parametr <span>:liczby</span> jest listą liczb całkowitych z&nbsp;zakresu od <b>0</b> do <b>88</b>. Wartością funkcji jest lista list składających się z&nbsp;liczby palindromicznej oraz liczby dodawań prowadzących do jej otrzymania.</p>
+<p>Liczby palindromiczne dla każdej liczby z&nbsp;listy <span>:liczby</span> otrzymujemy w&nbsp;następujący sposób: znajdujemy zapis wspak danej liczby i&nbsp;dodajemy do niej. Proces dodawania powtarzamy do otrzymania liczby palindromicznej (np. dla liczby <b>37</b>: <b>37+73=110</b>, <b>110+11=121</b>). Zakładamy, że parametr <span>:liczby</span> nie jest pustą listą.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">LICZPAL [76 28 87 88]</td>
+<td class="male"> jest [[484 2][121 2][4884 4][88 0]].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (trójkąty).</h4>
+<p>Napisz funkcję <span>ILEMAX&nbsp;:liczby</span>, gdzie parametr <span>:liczby</span> jest dowolną listą liczbową, zawierającą co najmniej trzy liczby dodatnie. Wynikiem funkcji jest liczba elementów najliczniejszego z&nbsp;podzbiorów danej listy, spełniającego warunek, że z&nbsp;odcinków o&nbsp;długościach określonych przez trzy dowolne elementy tego podzbioru można zbudować trójkąt.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ILEMAX [1 1 3]</td>
+<td class="male"> jest 0.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEMAX [2 789 5 3 3237 4]</td>
+<td class="male"> jest 3.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (liczby rzymskie).</h4>
+<p>Rzymski sposób zapisu liczb używa siedmiu znaków, z&nbsp;których każdy reprezentuje pewną wartość:</p>
+<p><b>I</b> oznacza "jeden", <b>V</b> - "pięć", <b>X</b> - "dziesięć", <b>L</b> - "pięćdziesiąt", <b>C</b> - "sto", <b>D</b> - "pięćset", a&nbsp;<b>M</b> oznacza "tysiąc".</p>
+<p>Liczbę w zapisie rzymskim tworzymy zestawiając odpowiednie znaki, zapisując po kolei, o&nbsp;ile istnieją: tysiące, setki, dziesiątki i&nbsp;jedności. Nie mogą ze sobą sąsiadować dwa identyczne znaki spośród <b>V</b>, <b>L</b> oraz <b>D</b>. Obok siebie mogą stać co najwyżej trzy identyczne znaki spośród <b>I</b>, <b>X</b>, <b>C</b>, <b>M</b>. Przestrzegając tych zasad, nie moglibyśmy zapisać niektórych liczb - tych, które zawierają dokładnie cztery lub dziewięć - setek, dziesiątek lub jedności. W&nbsp;takich sytuacjach wprowadzony został zapis za pomocą dwuznaku, w&nbsp;którym znak oznaczający większą wartość jest poprzedzony znakiem oznaczającym mniejszą wartość: znak <b>V</b> lub <b>X</b> może być poprzedzony przez <b>I</b>, znak <b>L</b> lub <b>C</b> może być poprzedzony przez <b>X</b>, a&nbsp;znak <b>D</b> lub <b>M</b> może być poprzedzony przez <b>C</b> - jest to interpretowane jako różnica, w&nbsp;której od większej wartości odejmujemy mniejszą. Na przykład <b>I</b> oznacza "jeden", <b>II</b> - "dwa", <b>III</b> - "trzy", <b>IV</b> - "cztery", <b>V</b> - "pięć", <b>VI</b> - "sześć", <b>IX</b> - "dziewięć", <b>CXLIII</b> - "sto czterdzieści trzy", <b>MMDCCCXCIX</b> - "dwa tysiące osiemset dziewięćdziesiąt dziewięć".</p>
+
+<p>Napisz funkcję <span>DODAJR&nbsp;:rzymskie</span>, której parametrem jest niepusta lista zawierająca słowa będące zapisami rzymskimi liczb naturalnych. Wynikiem funkcji jest słowo będące zapisem rzymskim sumy liczb tej listy. Zakładamy, że elementy listy, a&nbsp;także suma, są mniejsze od czterech tysięcy.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">DODAJR [I II III]</td>
+<td class="male"> jest "VI.</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">DODAJR [MCMXCIX I VII]</td>
+<td class="male"> jest "MMVII.</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

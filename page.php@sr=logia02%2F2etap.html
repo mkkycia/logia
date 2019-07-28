@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu Mazowieckiego Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;02, Logo i&nbsp;algorytmy
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1.</h4>
+<p>Zdefiniuj procedurę bez parametrów, o&nbsp;nazwie <span>PARKIET</span>, która tworzy na środku ekranu możliwie duży rysunek, taki jak na rysunku poniżej:</p>
+<div class="art-img-center">
+<img src="logia02/2zad1.gif" title="PARKIET" hspace="5">
+</div>
+<p><b>Objaśnienie do treści zadań 2 i&nbsp;3:</b></p>
+<p>Pionek (żółw) porusza się ruchem konika szachowego po nieskończonej kwadratowej siatce punktów jak na rysunku poniżej:</p>
+<div class="art-img-center">
+<img src="logia02/wrys1.gif" title="Siatka punktów" hspace="5">
+</div>
+<p>Pionek, znajdując się w&nbsp;dowolnym punkcie siatki, może zawsze wykonać jeden z&nbsp;ośmiu ruchów. Ruchy te numerujemy i&nbsp;opisujemy następująco:</p>
+<dl>
+<dd>ruch numer 1 - o&nbsp;2 oczka w&nbsp;górę i&nbsp;o&nbsp;1 w&nbsp;prawo,
+<dd>ruch numer 2 - o&nbsp;1 oczko w&nbsp;górę i&nbsp;o&nbsp;2 w&nbsp;prawo,
+<dd>ruch numer 3 - o&nbsp;1 oczko w&nbsp;dół i&nbsp;o&nbsp;2 w&nbsp;prawo,
+<dd>ruch numer 4 - o&nbsp;2 oczka w&nbsp;dół i&nbsp;o&nbsp;1 w&nbsp;prawo,
+<dd>ruch numer 5 - o&nbsp;2 oczka w&nbsp;dół i&nbsp;o&nbsp;1 w&nbsp;lewo,
+<dd>ruch numer 6 - o&nbsp;1 oczko w&nbsp;dół i&nbsp;o&nbsp;2 w&nbsp;lewo,
+<dd>ruch numer 7 - o&nbsp;1 oczko w&nbsp;górę i&nbsp;o&nbsp;2 w&nbsp;lewo,
+<dd>ruch numer 8 - o&nbsp;2 oczka w&nbsp;górę i&nbsp;o&nbsp;1 w&nbsp;lewo.
+</dl>
+<p>Każdą drogę żółwia po siatce można zakodować w&nbsp;postaci liczby, w&nbsp;której występują wyłącznie cyfry od 1 do 8 - numery kolejnych ruchów.<br>
+Na przykład:</p>
+<ul>
+<li>kodem drogi pionka od punktu A do punktu B (popatrz na rysunek na dole) jest liczba 12318,</li>
+<li>kodem drogi po śladach w&nbsp;przeciwnym kierunku od B do A jest liczba 45765,</li>
+<li>kodem planu wędrówki od punktu A do C - symetrycznej do trasy od A do B względem pionowej osi symetrii przechodzącej przez punkt startu A jest liczba 87681,</li>
+<li>kodem drogi po śladach w przeciwnym kierunku od C do A jest liczba 54234.</li>
+</ul>
+
+<div class="art-img-center">
+<img src="logia02/2zad2.gif" title="DROGA" hspace="5">
+</div>
+
+<h4>Zadanie 2.</h4>
+<p>Zdefiniuj procedurę <span>DROGA&nbsp;:kd</span>, która dla danego kodu drogi, narysuje tę drogę na ekranie. Załóż, że punktem startu jest środek ekranu. Siatki kwadratowej nie musisz rysować.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Efektem&nbsp;wywołania </td><td class="granat">DROGA&nbsp;12318</td><td class="male"> jest łamana łącząca punkty A i B na powyższym rysunku, przy czym punkt A odpowiada środkowi ekranu.</td></tr>
+<tr><td class="male">Efektem&nbsp;wywołania </td><td class="granat">DROGA&nbsp;45765</td><td class="male"> jest łamana łącząca punkty A i B na powyższym rysunku, przy czym punkt B odpowiada środkowi ekranu.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3.</h4>
+<p>Zdefiniuj funkcję <span>WSPAK&nbsp;:kd</span>, która dla danego kodu drogi znajduje kod drogi po śladach w&nbsp;przeciwnym kierunku od końca do początku. Poniżej przedstawiamy przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Poprawnym wynikiem </td><td class="granat">WSPAK&nbsp;12318</td>
+<td class="male">jest liczba 45765</td></tr>
+<tr><td class="male">Poprawnym wynikiem </td><td class="granat">WSPAK&nbsp;45765</td>
+<td class="male">jest liczba 12318</td></tr>
+<tr><td class="male">Poprawnym wynikiem </td><td class="granat">WSPAK&nbsp;87681</td>
+<td class="male">jest liczba 54234</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

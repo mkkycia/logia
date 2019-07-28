@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania drugiego etapu IV Warszawskiego Konkursu Informatycznego<br /> 
+rok szkolny 1997/98
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4 >Zadanie 1.</h4>
+<p>Zdefiniuj procedurę z&nbsp;dwoma parametrami <span>TROJKI&nbsp;:zakres&nbsp;:suma</span>, której wywołanie powoduje wypisanie w&nbsp;kolejnych wierszach wszystkich trójek liczb całkowitych dodatnich a&nbsp;b&nbsp;c, nie większych niż dana wartość <span>:zakres</span>, takich że: a&lt;b&lt;c oraz a+b+c=<span>:suma</span>. Oto przykładowe działanie procedury:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">TROJKI&nbsp;6&nbsp;10</td>
+<td class="granat">TROJKI&nbsp;7&nbsp;12</td></tr>
+<tr>
+<td class="male">powinno wypisać na ekranie:</td>
+<td class="male">powinno wypisać na ekranie:</td></tr>
+<tr><td>1&nbsp;3&nbsp;6<br>
+1&nbsp;4&nbsp;5<br>
+2&nbsp;3&nbsp;5</td>
+<td>1&nbsp;4&nbsp;7<br>
+1&nbsp;5&nbsp;6<br>
+2&nbsp;3&nbsp;7<br>
+2&nbsp;4&nbsp;6<br>
+3&nbsp;4&nbsp;5</td>
+</tr>
+</table>
+</div>
+<h4 >Zadanie 2.</h4>
+<p>Zdefiniuj funkcję z jednym parametrem <span>MOS&nbsp;:wyraz</span>, której wartością dla danego wyrazu jest liczba liter zawartych między najbardziej odległymi samogłoskami w&nbsp;tym wyrazie, lub -1 w&nbsp;przypadku gdy wyraz nie zawiera przynajmniej dwóch samogłosek. Zakładamy, że wyrazy zawierają jedynie małe litery alfabetu łacińskiego. Oto przykładowe wyniki:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="granat">MOS&nbsp;"hokus</td>
+<td class="male">ma wartość&nbsp;1</td></tr>
+<tr><td class="granat">MOS&nbsp;"nic</td>
+<td class="male">ma wartość&nbsp;-1</td></tr>
+<tr><td class="granat">MOS&nbsp;"abrakadabra</td>
+<td class="male">ma wartość&nbsp;9</td></tr>
+</table></div>
+
+<h4 >Zadanie 3.</h4>
+<p>Z trzech identycznych kwadratów można ułożyć figurę o&nbsp;kształcie litery L, taką jak na rysunku a. Takie samo L można utworzyć:<br>
+z 4 dwa razy mniejszych L - ja na rysunku b,<br>
+z 16 cztery razy mniejszych L - jak na rysunku c, itd.</p>
+<div class="art-img-center">
+<img src="4wki/2zad3a.gif" title="rysunek a" hspace="5">
+<img src="4wki/2zad3b.gif" title="rysunek b" hspace="5">
+<img src="4wki/2zad3c.gif" title="rysunek c" hspace="5">
+</div>
+<p>Każde kolejne L jest coraz bardziej złożone. Przyjmijmy, że:</p>
+<ul>
+<li>proste L na rysunku a ma stopień złożoności&nbsp;0</li>
+<li>L na rysunku b ma stopień złożoności&nbsp;1</li>
+<li>L na rysunku c ma stopień złożoności&nbsp;2</li>
+<li>L o stopniu złożoności n składa się z&nbsp;4-n odpowiednio mniejszych prostych&nbsp;L.</li>
+</ul>
+<p>Napisz procedurę z&nbsp;jednym parametrem <span>L&nbsp;:n</span>, która dla dowolnego <span>:n</span> tworzy na środku ekranu możliwie duży rysunek L o&nbsp;stopniu złożoności&nbsp;<span>:n</span>.</p>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

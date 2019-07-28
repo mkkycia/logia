@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;09
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (nawożenie i plony).</h4>
+<p>Wieś <i>Logianów</i> postanowiła nawozić swoje pola zgodnie z zasadami rolnictwa precyzyjnego. Za pomocą specjalnych kombajnów zbożowych wyposażonych w&nbsp;mierniki plonów zebrano dane o wysokości zbiorów w różnych częściach <i>logianowskich</i> pól. Następnie opracowano wyniki na komputerze, tworząc barwne mapy plonów. Na podstawie mapy plonów stosuje się zabiegi nawożenia roślin polegające na tym, że te części pola, które mogą wydać większy plon otrzymują odpowiednio wyższe nawożenie, natomiast te, które mają mniejszy potencjał otrzymują odpowiednio mniej. Przyjęto trzy poziomy nawożenia: I - minimalne nawożenie, II - średnie, III - najwyższe.</p> 
+<div class="art-img-center">
+<img src="logia09/3zad1.gif" hspace="5" vspace="5" title="Nawożenie pola w Logianowie">
+</div> 
+<p>Każde pole ma wymiary <span>:n</span> na <span>:n</span> jednostek. Dzielimy je na prostokątne obszary, ze względu na poziom nawożenia. Położenie oraz poziom nawożenia obszaru określamy za pomocą pięcioelementowej listy liczb całkowitych. Cztery pierwsze liczby wyznaczają przeciwległe narożniki obszaru i mogą przyjmować wartości z&nbsp;zakresu od 0 do <span>:n</span>, piąta liczba określa poziom nawożenia, może przyjmować wartości z zakresu od 1 do 3. Na przykład lista <span>[0 0 1 2 3]</span> oznacza najwyższy stopień nawożenia górnego lewego kwadratu pola i kwadratu poniżej.</p>	 
+<p>Napisz funkcję <span>ILEN :n :mapa</span>,  która wyliczy, jakie części <i>logianowskich</i> pól obejmuje każdy ze stosowanych poziomów nawożenia. Parametr <span>:n</span> określa wielkość pola i&nbsp;może przyjmować wartości od 1 do 10, parametr <span>:mapa</span> jest listą złożoną z list określających położenie oraz poziom nawożenia obszarów. Zakładamy, że wszystkie obszary, które nie są wymienione na liście wymagają minimalnego nawożenia, na liście nie ma też sprzecznych danych. Wynikiem funkcji jest trójelementowa lista liczb określających powierzchnię objętą I, II oraz III poziomem nawożenia.</p> 
+<p>Przykłady:</p> 
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">ILEN 4 [[0 0 4 4 2]]</td>
+<td class="male"> jest [0 16 0].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEN 3 [[0 0 1 1 3][2 2 3 3 2]]</td>
+<td class="male"> jest [7 1 1],</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">ILEN 4 [[0 0 1 2 2][0 1 3 2 2][3 3 4 4 3]]</td>
+<td class="male"> jest [11 4 1].</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 2 (ślimak).</h4>
+<p>Szyfrujemy słowo zapisując je w formie ślimaka (druga litera nad pierwszą, trzecia po prawej stronie drugiej, czwarta pod trzecią itd. dookoła), a następnie czytamy wierszami od lewej do prawej. Na przykład zapisane w formie ślimaka słowo <span>"abcdefghijklmnopqrstuvwxy</span> odczytamy jako <span>"yjklmxibcnwhadovgfeputsrq</span>.</p>
+<div class="art-img-center">
+<img src="logia09/3zad2.gif" hspace="5" vspace="5" title="Ilustracja graficzna wypisywania słowa w formie ślimaka">
+</div> 
+<p>Napisz funkcję <span>SZYFR :słowa</span>, której daną jest lista słów do zaszyfrowania, a&nbsp;wynikiem jest lista zaszyfrowanych słów według przedstawionego sposobu.</p>
+<p>Przykłady:</p>
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR [abc defg hijkl]</td>
+<td class="male"> jest [bca efdg ijhkl].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR [konkurs logia]</td>
+<td class="male"> jest [onkksru oglia].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 3 (liczby pierwsze lustrzane).</h4>
+<p>Asia kontynuuje badanie liczb pierwszych. Przeglądając encyklopedię znalazła następującą definicję: "<i>Liczbami pierwszymi lustrzanymi</i> nazywamy pary różnych liczb pierwszych, z których jedna powstaje przez zapisanie cyfr drugiej w odwrotnej kolejności. Dwucyfrowe <i>lustrzane liczby pierwsze</i> to 13 i 31, 17 i 71, 37 i&nbsp;73, 79 i 97.". Asia zauważyła, że po sklejeniu dwóch <i>lustrzanych liczb pierwszych</i> otrzymuje liczby będące palindromami (nie zmieniają się, gdy ich cyfry zapiszemy w odwrotnej kolejności): 1331, 1771, 3773, 9779. Asia postanowiła poszukać więcej takich liczb.</p>
+<p>Pomóż Asi wyszukać sześciocyfrowe liczby palindromiczne, z których każda powstała przez sklejenie pary trzycyfrowych <i>liczb pierwszych lustrzanych</i>. Napisz funkcję <span>LLLP :n</span>, która zbuduje uporządkowaną rosnąco listę złożoną z <span>:n</span> najmniejszych sześciocyfrowych liczb palindromicznych. Zakładamy, że <span>:n</span> nie przekracza liczby wszystkich sześciocyfrowych liczb palindromicznych.</p>
+<p>Przykłady:</p> 
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">LLLP 0</td>
+<td class="male"> jest [].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">LLLP 2</td>
+<td class="male"> jest [107701 113311].</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (autobusy).</h4>
+<p>W pewnym mieście, przy pewnym przystanku, pomiędzy godziną 5 a 23, zatrzymują się autobusy dwóch linii autobusowych, o numerach 1 i 2. Autobusy obu linii kursują nie częściej niż co dziesięć minut, a pomiędzy kolejnymi odjazdami autobusów tej samej linii mija parzysta liczba minut.</p>
+<p>Rozkład odjazdów jest podany w postaci listy dwuelementowych list i opisuje chronologicznie odjazdy autobusów z&nbsp;dokładnością do jednej minuty. Każda dwuelementowa lista zawiera numer linii i czas odjazdu. Czas odjazdu jest trzycyfrową lub czterocyfrową liczbą, której dwie ostatnie cyfry określają minutę, a&nbsp;pozostałe określają godzinę odjazdu.</p> 
+<p>Wobec spodziewanego przyjazdu do miasta wielu turystów, prezydent miasta podjął decyzję, że pomiędzy każdymi dwoma odjazdami autobusów tej samej linii pojawi się kolejny, w równym odstępie czasowym od dotychczasowych autobusów tej linii.</p>
+<p>Napisz funkcję <span>NRJ :rj</span>, która dla danego rozkładu odjazdów <span>:rj</span> wyliczy nowy rozkład odjazdów, po uwzględnieniu decyzji prezydenta.</p>
+<p>Zakładamy, że zarówno dotychczasowy, jak i nowy rozkład odjazdów są tak ułożone, aby w każdej minucie z&nbsp;przystanku odjeżdżał co najwyżej jeden autobus - jeśli pewien dodatkowy odjazd miałby mieć miejsce o tej samej godzinie i&nbsp;minucie, w której odjeżdża z przystanku inny autobus, to odjazd dodatkowego autobusu powinien być o&nbsp;minutę przyspieszony lub opóźniony.</p>
+<p>Przykłady:</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem <span class="granat">NRJ [[1 700][2 707][1 720]]</span> jest [[1 700][2 707][1 710][1 720]].</td></tr>
+<tr><td class="male">Wynikiem <span class="granat">NRJ [[1 701][2 710][1 715][2 720]]</span> może być [[1 701][1 708][2 710][2 714][1 715][2 720]] albo [[1 701][1 708][2 710][1 715][2 716][2 720]].</td></tr>
+
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>

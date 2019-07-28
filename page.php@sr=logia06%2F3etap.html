@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <!--
+    Created by Artisteer v2.5.0.31067
+    Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
+    -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Konkurs Informatyczny dla gimnazjalistów LOGIA</title>
+		<meta name="Author" content="Agnieszka Borowiecka">
+		<meta name="Description" content="Konkurs Informatyczny">
+		<meta name="KeyWords" content="WKI, Warszawski Konkurs Informatyczny, zadania, logo, logia, OEIiZK">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body> 
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <div class="art-header">
+                    <div class="art-header-png"></div>
+                    <div class="art-logo">
+                        <h1 id="name-text" class="art-logo-name">Konkurs Informatyczny <br />dla gimnazjalistów LOGIA</h1>
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+
+<h2 class="art-postheader">
+Zadania trzeciego etapu Konkursu Informatycznego dla gimnazjalistów LOGIA&nbsp;06
+</h2>
+<div class="art-postcontent">
+<!-- article-content -->
+
+<h4>Zadanie 1 (pary liczb trójkątnych).</h4>
+<p>Na II etapie konkursu jedno z&nbsp;zadań dotyczyło liczb trójkątnych. Dla przypomnienia, rysunki obok przedstawiają graficzną ilustrację kolejnych liczb trójkątnych.</p> 
+<div class="art-img-center"><img src="logia06/2zad2a.gif" hspace="5" title="Liczby trójkątne"></div>
+<p>Napisz funkcję <span>NATR&nbsp;:ll</span>, której daną jest lista dodatnich liczb całkowitych nie większych niż 200. Wynikiem funkcji jest lista par liczb przedstawiających liczby danej <span>:ll</span> jako sumy dwóch liczb trójkątnych. Nie każda liczba da się przedstawić jako suma dwóch liczb trójkątnych, wówczas takiej liczbie odpowiada lista pusta. Dla niektórych liczb istnieje więcej niż jedna taka para, wówczas na liście wynikowej może wystąpić dowolna z&nbsp;tych par. Kolejność liczb w&nbsp;obrębie pary jest także dowolna.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">NATR [94 2 3 4 5 30 81]</td>
+<td class="male"> jest [[3 91][1 1][][1 3][][15 15][78 3]].</td></tr>
+<tr><td class="male">&nbsp;</td></td><td class="granat">
+<td class="male">Prawidłowym wynikiem jest też <br />[[66 28][1 1][][3 1][][15 15][66 15]]</td></tr>
+<tr><td class="male">&nbsp;</td></td><td class="granat">
+<td class="male"> lub [[66 28][1 1][] [3 1][][15 15][45 36]]</td></tr>
+</table>
+</div>
+
+
+<h4>Zadanie 2 (haft krzyżykowy).</h4>
+<p>Haft krzyżykowy - rodzaj <b>haftu</b>, w&nbsp;którym na materiale w&nbsp;formie siatki o&nbsp;jednakowej na całej powierzchni gęstości oczek (<b>kanwie</b>) wykonuje się tzw. "krzyżyki". Są to podstawowe elementy haftu krzyżykowego. Powstają one przez przeplecenie kolorowej nici przez oczko kanwy, a&nbsp;następnie wykonanie tego samego w&nbsp;taki sposób, aby kolejna część nitki pokryła poprzednią, przecinając ją pod kątem prostym (krzyżyk).</p>
+<p>Napisz procedurę <span>HAFT&nbsp;:ll</span>, której daną jest niepusta lista nieujemnych liczb całkowitych. Procedura tworzy rysunek kwadratowego elementu wyszywanego w&nbsp;dwóch kolorach - czerwonym i&nbsp;czarnym; miejsca niewyszywane przedstawiamy za pomocą jasnoszarych krzyżyków. Przyjrzyj się poniższym przykładom i&nbsp;wywnioskuj, jaka reguła rządzi powstawaniem rysunków.</p>
+<p>Są to wyniki wywołania HAFT [0 1 2 3 4 5 6 7 8], HAFT [26 16 3] oraz <br />HAFT [1512 18168 50288 49532 49208 18600 16728 49640 50324 13128]</p>
+
+<div class="art-img-center">
+<img src="logia06/3zad2a.gif" hspace="5" vspace="5" title="HAFT [0 1 2 3 4 5 6 7 8]">
+<img src="logia06/3zad2b.gif" hspace="2" vspace="5" title="HAFT [26 16 3]">
+<img src="logia06/3zad2c.gif" hspace="2" vspace="5" title="HAFT [1512 18168 50288 49532 49208 18600 16728 49640 50324 13128]">
+</div>
+<p>Każda liczba na liście jest zaszyfrowanym opisem jednego wiersza krzyżyków. Wielkość kwadratowego motywu jest określona przez długość listy <span>:ll</span>. Rysunek musi mieścić się w&nbsp;całości na ekranie i&nbsp;wykorzystywać co najmniej 3/4 wysokości ekranu. Maksymalna długość listy wynosi 50, wartości liczb zależą od długości listy i&nbsp;zawsze są prawidłowe.</p>
+
+<h4>Zadanie 3 (pokrycie).</h4>
+<p>Na kwadratowym trawniku o&nbsp;rozmiarach 20&#215;20 położono prostokątne maty. Ułożenie każdej maty i&nbsp;jej rozmiar opisujemy za pomocą czterech liczb całkowitych z&nbsp;zakresu od 0 do 20: [x1&nbsp;y1&nbsp;x2&nbsp; y2], gdzie [x1&nbsp;y1], [x2&nbsp;y2] to współrzędne dwóch przeciwległych wierzchołków prostokąta. Zakładamy, że x1&#8804;x2 oraz y1&#8804;y2. Mata [0 0 20 20] pokrywa cały trawnik, mata [10&nbsp;10&nbsp;20&nbsp;20] - jego "górną prawą" ćwiartkę. Układ mat można zapisać w&nbsp;postaci listy opisów mat, np. [[10&nbsp;10&nbsp;20&nbsp;20] [0&nbsp;0&nbsp;20&nbsp;10] [8&nbsp;8&nbsp;12&nbsp;12]].</p>
+<p>Zdefiniuj funkcję <span>NIEPOKRYTE&nbsp;:um</span>, której wynikiem - dla danego układu mat <span>:um</span> - jest liczba określająca pole powierzchni nieprzykrytej części trawnika.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">NIEPOKRYTE [[10 10 20 20] [0 0 20 10] [8 8 12 12]]</td>
+<td class="male"> jest 96.</td></tr>
+</table>
+</div>
+
+<h4>Zadanie 4 (szyfr Cezara).</h4>
+<p>Szyfr Cezara polega na zastąpieniu każdego kolejnego znaku szyfrowanego tekstu znakiem występującym w&nbsp;alfabecie o&nbsp;określoną liczbę pozycji dalej, cyklicznie (tj. jeśli wykraczamy poza alfabet, to kolejne znaki bierzemy z&nbsp;początku alfabetu). Nasz alfabet będzie składał się z&nbsp;małych liter alfabetu łacińskiego oraz spacji. Przyjmujemy, że spacja jest następnym znakiem po literze&nbsp;z.</p>
+<p>Napisz funkcję <span>SZYFR&nbsp;:ls&nbsp;:klucz</span>, której danymi są <span>:ls</span> - lista słów składających się z&nbsp;małych liter alfabetu łacińskiego oraz liczba naturalna <span>:klucz</span>. Wynikiem funkcji jest lista słów składających się z&nbsp;małych liter alfabetu łacińskiego powstała po zaszyfrowaniu danej <span>:ls</span> szyfrem Cezara o&nbsp;kluczu <span>:klucz</span>. Kodowaniu podlegają także odstępy pomiędzy słowami. Dwa sąsiednie znaki szyfrowanego tekstu nie mogą być identyczne. Gdyby skrajne (pierwszy bądź ostatni) znaki kodowanego tekstu miały być zaszyfrowane jako spacja, to są pomijane w&nbsp;wyniku.</p>
+
+<div>
+<table class="zad-przyklad">
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR [hokus pokus abrakadabra] 26</td>
+<td class="male"> jest [gnjtrzonjtrz aq j c aq].</td></tr>
+<tr><td class="male">Wynikiem </td><td class="granat">SZYFR [zuzia je szczaw] 1</td>
+<td class="male"> jest [v jbakfat d bx].</td></tr>
+</table>
+</div>
+
+		<!-- /article-content -->
+</div>
+<div class="cleared"></div>
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                            <!-- block-content -->
+<ul class="art-vmenu">
+	<li class="active">
+		<a class="active" href="page.php@sr=glowna.html"><span class="l"></span><span class="r"></span><span class="t">aktualności</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=laureaci.html"><span class="l"></span><span class="r"></span><span class="t">laureaci</span></a>
+	</li>
+	
+	<li>
+		<a href="page.php@sr=1etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z I etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=2etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z II etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=3etap.html"><span class="l"></span><span class="r"></span><span class="t">zadania z III etapów</span></a>
+	</li>
+	<li>
+		<a href="page.php@sr=poczta.html"><span class="l"></span><span class="r"></span><span class="t">kontakt</span></a>
+	</li>
+</ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2011. All Rights Reserved.</p>
+                        </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"><a href="http://www.artisteer.com/">Web Template</a> created with Artisteer.</p>
+    </div>
+    
+</body>
+</html>
